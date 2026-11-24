@@ -1,0 +1,1604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg id="container" width="2167.609375" xmlns="http://www.w3.org/2000/svg" class="erDiagram" height="845.5" viewBox="4 4 2167.609375 845.5" role="graphics-document document" aria-roledescription="er">
+  <style>#container{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#container .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#container .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#container .error-icon{fill:#552222;}#container .error-text{fill:#552222;stroke:#552222;}#container .edge-thickness-normal{stroke-width:1px;}#container .edge-thickness-thick{stroke-width:3.5px;}#container .edge-pattern-solid{stroke-dasharray:0;}#container .edge-thickness-invisible{stroke-width:0;fill:none;}#container .edge-pattern-dashed{stroke-dasharray:3;}#container .edge-pattern-dotted{stroke-dasharray:2;}#container .marker{fill:#333333;stroke:#333333;}#container .marker.cross{stroke:#333333;}#container svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#container p{margin:0;}#container .entityBox{fill:#ECECFF;stroke:#9370DB;}#container .relationshipLabelBox{fill:hsl(80, 100%, 96.2745098039%);opacity:0.7;background-color:hsl(80, 100%, 96.2745098039%);}#container .relationshipLabelBox rect{opacity:0.5;}#container .labelBkg{background-color:rgba(248.6666666666, 255, 235.9999999999, 0.5);}#container .edgeLabel{background-color:rgba(232,232,232, 0.8);}#container .edgeLabel .label rect{fill:rgba(232,232,232, 0.8);}#container .edgeLabel .label text{fill:#333;}#container .edgeLabel .label{fill:#9370DB;font-size:14px;}#container .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#container .edge-pattern-dashed{stroke-dasharray:8,8;}#container .node rect,#container .node circle,#container .node ellipse,#container .node polygon{fill:#ECECFF;stroke:#9370DB;stroke-width:1;}#container .relationshipLine{stroke:#333333;stroke-width:1;fill:none;}#container .marker{fill:none!important;stroke:#333333!important;stroke-width:1;}#container [data-look=neo].labelBkg{background-color:rgba(248.6666666666, 255, 235.9999999999, 0.5);}#container .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#container .cluster text{fill:#333;}#container .cluster-label text{fill:#333;}#container .node .neo-node{stroke:#9370DB;}#container [data-look="neo"].node rect,#container [data-look="neo"].cluster rect,#container [data-look="neo"].node polygon{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#container [data-look="neo"].swimlane.cluster rect{filter:none;}#container [data-look="neo"].node path{stroke:#9370DB;stroke-width:1px;}#container [data-look="neo"].node .outer-path{filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#container [data-look="neo"].node .neo-line path{stroke:#9370DB;filter:none;}#container [data-look="neo"].node circle{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#container [data-look="neo"].node circle .state-start{fill:#000000;}#container [data-look="neo"].icon-shape .icon{fill:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#container [data-look="neo"].icon-shape .icon-neo path{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#container :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style>
+  <g>
+    <defs>
+      <marker id="container_er-onlyOneStart" class="marker onlyOne er" refX="0" refY="9" markerWidth="18" markerHeight="18" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M9,0 L9,18 M15,0 L15,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-onlyOneEnd" class="marker onlyOne er" refX="18" refY="9" markerWidth="18" markerHeight="18" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M3,0 L3,18 M9,0 L9,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-zeroOrOneStart" class="marker zeroOrOne er" refX="0" refY="9" markerWidth="30" markerHeight="18" orient="auto" markerUnits="userSpaceOnUse">
+        <circle fill="#ECECFF" cx="21" cy="9" stroke-width="1" r="6"></circle>
+        <path d="M9,0 L9,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-zeroOrOneEnd" class="marker zeroOrOne er" refX="30" refY="9" markerWidth="30" markerHeight="18" markerUnits="userSpaceOnUse" orient="auto">
+        <circle fill="#ECECFF" cx="9" cy="9" stroke-width="1" r="6"></circle>
+        <path d="M21,0 L21,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-oneOrMoreStart" class="marker oneOrMore er" refX="18" refY="18" markerWidth="45" markerHeight="36" orient="auto" markerUnits="userSpaceOnUse">
+        <path d="M0,18 Q 18,0 36,18 Q 18,36 0,18 M42,9 L42,27" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-oneOrMoreEnd" class="marker oneOrMore er" refX="27" refY="18" markerWidth="45" markerHeight="36" markerUnits="userSpaceOnUse" orient="auto">
+        <path d="M3,9 L3,27 M9,18 Q27,0 45,18 Q27,36 9,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-zeroOrMoreStart" class="marker zeroOrMore er" refX="18" refY="18" markerWidth="57" markerHeight="36" markerUnits="userSpaceOnUse" orient="auto">
+        <circle fill="#ECECFF" cx="45.5" cy="18" r="6" stroke-width="1"></circle>
+        <path d="M0,18 Q18,0 36,18 Q18,36 0,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <defs>
+      <marker id="container_er-zeroOrMoreEnd" class="marker zeroOrMore er" refX="39" refY="18" markerWidth="57" markerHeight="36" orient="auto" markerUnits="userSpaceOnUse">
+        <circle fill="#ECECFF" cx="11" cy="18" r="6" stroke-width="1"></circle>
+        <path d="M21,18 Q39,0 57,18 Q39,36 21,18" stroke-width="1"></path>
+      </marker>
+    </defs>
+    <g class="root">
+      <g class="clusters"></g>
+      <g class="edges edgePaths">
+        <path d="M214.5,354L214.5,386.9289321881345Q214.5,394 221.57106781186548,394L692.9500259381346,394Q700.02109375,394 700.02109375,401.0710678118655L700.02109375,414" id="container-id_entity-EMPLOYEE-0_entity-REQUEST-1_0" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="stroke-dasharray: 0 0 540.19287109375 0; stroke-dashoffset: 0;fill:none;;;fill:none" data-edge="true" data-et="edge" data-id="id_entity-EMPLOYEE-0_entity-REQUEST-1_0" data-points="W3sieCI6MjE0LjUsInkiOjM1NH0seyJ4IjoyMTQuNSwieSI6Mzk0fSx7IngiOjcwMC4wMjEwOTM3NSwieSI6Mzk0fSx7IngiOjcwMC4wMjEwOTM3NSwieSI6NDE0fV0=" data-look="neo" marker-start="url(#container_er-onlyOneStart)" marker-end="url(#container_er-zeroOrMoreEnd)"></path>
+        <path d="M666.6015625,354L666.6015625,366.9289321881345Q666.6015625,374 673.6726303118655,374L814.5219009381344,374Q821.59296875,374 821.59296875,381.0710678118655L821.59296875,414" id="container-id_entity-SPECIALIST-2_entity-REQUEST-1_1" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="stroke-dasharray: 0 0 209.6630859375 0; stroke-dashoffset: 0;fill:none;;;fill:none" data-edge="true" data-et="edge" data-id="id_entity-SPECIALIST-2_entity-REQUEST-1_1" data-points="W3sieCI6NjY2LjYwMTU2MjUsInkiOjM1NH0seyJ4Ijo2NjYuNjAxNTYyNSwieSI6Mzc0fSx7IngiOjgyMS41OTI5Njg3NSwieSI6Mzc0fSx7IngiOjgyMS41OTI5Njg3NSwieSI6NDE0fV0=" data-look="neo" marker-start="url(#container_er-zeroOrOneStart)" marker-end="url(#container_er-zeroOrMoreEnd)"></path>
+        <path d="M1098.15625,354L1098.15625,366.9289321881345Q1098.15625,374 1091.0851821881345,374L950.2359115618656,374Q943.16484375,374 943.16484375,381.0710678118655L943.16484375,414" id="container-id_entity-EQUIPMENT_TYPE-3_entity-REQUEST-1_2" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="stroke-dasharray: 0 0 209.66305541992188 0; stroke-dashoffset: 0;fill:none;;;fill:none" data-edge="true" data-et="edge" data-id="id_entity-EQUIPMENT_TYPE-3_entity-REQUEST-1_2" data-points="W3sieCI6MTA5OC4xNTYyNSwieSI6MzU0fSx7IngiOjEwOTguMTU2MjUsInkiOjM3NH0seyJ4Ijo5NDMuMTY0ODQzNzUsInkiOjM3NH0seyJ4Ijo5NDMuMTY0ODQzNzUsInkiOjQxNH1d" data-look="neo" marker-start="url(#container_er-onlyOneStart)" marker-end="url(#container_er-zeroOrMoreEnd)"></path>
+        <path d="M1523.8359375,354L1523.8359375,386.9289321881345Q1523.8359375,394 1516.7648696881345,394L1071.8077865618654,394Q1064.73671875,394 1064.73671875,401.0710678118655L1064.73671875,414" id="container-id_entity-STATUS-4_entity-REQUEST-1_3" class="edge-thickness-normal edge-pattern-solid relationshipLine" style="stroke-dasharray: 0 0 513.77099609375 0; stroke-dashoffset: 0;fill:none;;;fill:none" data-edge="true" data-et="edge" data-id="id_entity-STATUS-4_entity-REQUEST-1_3" data-points="W3sieCI6MTUyMy44MzU5Mzc1LCJ5IjozNTR9LHsieCI6MTUyMy44MzU5Mzc1LCJ5IjozOTR9LHsieCI6MTA2NC43MzY3MTg3NSwieSI6Mzk0fSx7IngiOjEwNjQuNzM2NzE4NzUsInkiOjQxNH1d" data-look="neo" marker-start="url(#container_er-onlyOneStart)" marker-end="url(#container_er-zeroOrMoreEnd)"></path>
+      </g>
+      <g class="edgeLabels"></g>
+      <g class="nodes">
+        <g class="node default" id="container-entity-EMPLOYEE-0" data-look="neo" transform="translate(214.5, 183)">
+          <g class="outer-path" style="">
+            <path d="M-202.5 -171 L202.5 -171 L202.5 171 L-202.5 171" stroke="none" stroke-width="0" fill="#ECECFF"></path>
+            <path d="M-202.5 -171 C-50.87073608082375 -171, 100.7585278383525 -171, 202.5 -171 M-202.5 -171 C-99.09229742120596 -171, 4.3154051575880885 -171, 202.5 -171 M202.5 -171 C202.5 -64.76341234252483, 202.5 41.47317531495034, 202.5 171 M202.5 -171 C202.5 -65.72823695596958, 202.5 39.543526088060844, 202.5 171 M202.5 171 C61.80840734439758 171, -78.88318531120484 171, -202.5 171 M202.5 171 C113.29648767195985 171, 24.092975343919704 171, -202.5 171 M-202.5 171 C-202.5 89.10549656089822, -202.5 7.2109931217964345, -202.5 -171 M-202.5 171 C-202.5 81.05882363828741, -202.5 -8.882352723425186, -202.5 -171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-202.5 -128.25 L202.5 -128.25 L202.5 -85.5 L-202.5 -85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-202.5 -128.25 C-83.49944429812243 -128.25, 35.50111140375515 -128.25, 202.5 -128.25 M-202.5 -128.25 C-94.45913956452556 -128.25, 13.581720870948885 -128.25, 202.5 -128.25 M202.5 -128.25 C202.5 -119.21117067206704, 202.5 -110.1723413441341, 202.5 -85.5 M202.5 -128.25 C202.5 -116.99261767487567, 202.5 -105.73523534975133, 202.5 -85.5 M202.5 -85.5 C85.45324089116487 -85.5, -31.593518217670265 -85.5, -202.5 -85.5 M202.5 -85.5 C88.32506036256382 -85.5, -25.849879274872364 -85.5, -202.5 -85.5 M-202.5 -85.5 C-202.5 -100.71309861896344, -202.5 -115.92619723792687, -202.5 -128.25 M-202.5 -85.5 C-202.5 -101.29193207616136, -202.5 -117.0838641523227, -202.5 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-202.5 -85.5 L202.5 -85.5 L202.5 -42.75 L-202.5 -42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-202.5 -85.5 C-119.43736609591963 -85.5, -36.37473219183926 -85.5, 202.5 -85.5 M-202.5 -85.5 C-50.98312750465584 -85.5, 100.53374499068832 -85.5, 202.5 -85.5 M202.5 -85.5 C202.5 -70.09959072557983, 202.5 -54.69918145115967, 202.5 -42.75 M202.5 -85.5 C202.5 -73.30477728219314, 202.5 -61.10955456438627, 202.5 -42.75 M202.5 -42.75 C111.52746073133093 -42.75, 20.554921462661866 -42.75, -202.5 -42.75 M202.5 -42.75 C93.34733019996082 -42.75, -15.805339600078355 -42.75, -202.5 -42.75 M-202.5 -42.75 C-202.5 -51.374907745612376, -202.5 -59.99981549122475, -202.5 -85.5 M-202.5 -42.75 C-202.5 -59.23453138779507, -202.5 -75.71906277559015, -202.5 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-202.5 -42.75 L202.5 -42.75 L202.5 0 L-202.5 0" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-202.5 -42.75 C-46.37892318049228 -42.75, 109.74215363901544 -42.75, 202.5 -42.75 M-202.5 -42.75 C-95.04380274023524 -42.75, 12.412394519529528 -42.75, 202.5 -42.75 M202.5 -42.75 C202.5 -25.90438704333386, 202.5 -9.058774086667718, 202.5 0 M202.5 -42.75 C202.5 -31.853548914592253, 202.5 -20.95709782918451, 202.5 0 M202.5 0 C73.7387564634223 0, -55.02248707315539 0, -202.5 0 M202.5 0 C94.2002877865649 0, -14.0994244268702 0, -202.5 0 M-202.5 0 C-202.5 -16.51044116283655, -202.5 -33.0208823256731, -202.5 -42.75 M-202.5 0 C-202.5 -14.138265283955548, -202.5 -28.276530567911095, -202.5 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-202.5 0 L202.5 0 L202.5 42.75 L-202.5 42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-202.5 0 C-107.64847379996284 0, -12.796947599925687 0, 202.5 0 M-202.5 0 C-106.16892989909147 0, -9.837859798182933 0, 202.5 0 M202.5 0 C202.5 10.982006752410413, 202.5 21.964013504820826, 202.5 42.75 M202.5 0 C202.5 15.772740556033996, 202.5 31.545481112067993, 202.5 42.75 M202.5 42.75 C89.21726021044142 42.75, -24.065479579117152 42.75, -202.5 42.75 M202.5 42.75 C73.08317945664089 42.75, -56.33364108671822 42.75, -202.5 42.75 M-202.5 42.75 C-202.5 30.703740270045536, -202.5 18.65748054009107, -202.5 0 M-202.5 42.75 C-202.5 25.85653770486487, -202.5 8.96307540972974, -202.5 0" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-202.5 42.75 L202.5 42.75 L202.5 85.5 L-202.5 85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-202.5 42.75 C-52.02098875359147 42.75, 98.45802249281707 42.75, 202.5 42.75 M-202.5 42.75 C-57.57775554742133 42.75, 87.34448890515733 42.75, 202.5 42.75 M202.5 42.75 C202.5 51.568313666642695, 202.5 60.38662733328538, 202.5 85.5 M202.5 42.75 C202.5 54.37109459122799, 202.5 65.99218918245597, 202.5 85.5 M202.5 85.5 C87.77415928282366 85.5, -26.95168143435268 85.5, -202.5 85.5 M202.5 85.5 C75.35617113782016 85.5, -51.78765772435969 85.5, -202.5 85.5 M-202.5 85.5 C-202.5 74.4891951427276, -202.5 63.47839028545518, -202.5 42.75 M-202.5 85.5 C-202.5 69.17298817943548, -202.5 52.84597635887096, -202.5 42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-202.5 85.5 L202.5 85.5 L202.5 128.25 L-202.5 128.25" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-202.5 85.5 C-85.50338352046334 85.5, 31.49323295907331 85.5, 202.5 85.5 M-202.5 85.5 C-92.72597605764842 85.5, 17.048047884703152 85.5, 202.5 85.5 M202.5 85.5 C202.5 96.66695046279204, 202.5 107.83390092558408, 202.5 128.25 M202.5 85.5 C202.5 100.3743179211094, 202.5 115.24863584221879, 202.5 128.25 M202.5 128.25 C49.88053785921724 128.25, -102.73892428156552 128.25, -202.5 128.25 M202.5 128.25 C42.53611504297291 128.25, -117.42776991405418 128.25, -202.5 128.25 M-202.5 128.25 C-202.5 115.42504122909355, -202.5 102.60008245818712, -202.5 85.5 M-202.5 128.25 C-202.5 118.47266837600795, -202.5 108.69533675201589, -202.5 85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-202.5 128.25 L202.5 128.25 L202.5 171 L-202.5 171" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-202.5 128.25 C-103.50363666672926 128.25, -4.507273333458528 128.25, 202.5 128.25 M-202.5 128.25 C-48.3242827500635 128.25, 105.851434499873 128.25, 202.5 128.25 M202.5 128.25 C202.5 139.65060020238727, 202.5 151.05120040477453, 202.5 171 M202.5 128.25 C202.5 141.41265637611414, 202.5 154.57531275222826, 202.5 171 M202.5 171 C73.70019803552591 171, -55.09960392894817 171, -202.5 171 M202.5 171 C112.30351559610598 171, 22.107031192211963 171, -202.5 171 M-202.5 171 C-202.5 154.2749371495819, -202.5 137.54987429916378, -202.5 128.25 M-202.5 171 C-202.5 161.10887492274418, -202.5 151.21774984548836, -202.5 128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="label name" transform="translate(-37.03125, -161.625)" style="">
+            <foreignObject width="74.0625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 174px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>EMPLOYEE</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, -118.875)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, -118.875)" style="">
+            <foreignObject width="14.09375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 114px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, -118.875)" style="">
+            <foreignObject width="18.734375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 119px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>PK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, -118.875)" style="">
+            <foreignObject width="119.625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 220px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Идентификатор</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, -76.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, -76.125)" style="">
+            <foreignObject width="72.890625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 173px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>full_name</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, -76.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, -76.125)" style="">
+            <foreignObject width="35.125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 135px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>ФИО</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, -33.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, -33.375)" style="">
+            <foreignObject width="59.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 160px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>position</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, -33.375)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, -33.375)" style="">
+            <foreignObject width="81.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 183px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Должность</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, 9.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, 9.375)" style="">
+            <foreignObject width="85.875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 186px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>department</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, 9.375)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, 9.375)" style="">
+            <foreignObject width="44.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 144px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Отдел</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, 52.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, 52.125)" style="">
+            <foreignObject width="36.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>login</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, 52.125)" style="">
+            <foreignObject width="20.03125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>UK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, 52.125)" style="">
+            <foreignObject width="45.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 146px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Логин</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, 94.875)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, 94.875)" style="">
+            <foreignObject width="68.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 169px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>password</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, 94.875)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, 94.875)" style="">
+            <foreignObject width="55.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 156px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Пароль</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-190, 137.625)" style="">
+            <foreignObject width="65.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>datetime</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-99.75, 137.625)" style="">
+            <foreignObject width="76.921875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 177px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>created_at</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(11.125, 137.625)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(56.15625, 137.625)" style="">
+            <foreignObject width="133.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 235px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Дата регистрации</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="divider">
+            <path d="M-202.5 -128.25005 L-202.5 -128.24995 L202.5 -128.24995 L202.5 -128.25005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-202.5 -128.25005 C-202.5 -128.2500233872848, -202.5 -128.2499967745696, -202.5 -128.24995 M-202.5 -128.25005 C-202.5 -128.25002416660325, -202.5 -128.2499983332065, -202.5 -128.24995 M-202.5 -128.24995 C-90.44250177728695 -128.24995, 21.6149964454261 -128.24995, 202.5 -128.24995 M-202.5 -128.24995 C-102.70606380140548 -128.24995, -2.912127602810955 -128.24995, 202.5 -128.24995 M202.5 -128.24995 C202.5 -128.24998842039474, 202.5 -128.25002684078947, 202.5 -128.25005 M202.5 -128.24995 C202.5 -128.24997716399074, 202.5 -128.2500043279815, 202.5 -128.25005 M202.5 -128.25005 C52.118876659853186 -128.25005, -98.26224668029363 -128.25005, -202.5 -128.25005 M202.5 -128.25005 C59.7897522748043 -128.25005, -82.9204954503914 -128.25005, -202.5 -128.25005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-112.25005 -128.25 L-112.24995 -128.25 L-112.24995 171 L-112.25005 171" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-112.25005 -128.25 C-112.25002899000425 -128.25, -112.25000798000849 -128.25, -112.24995 -128.25 M-112.25005 -128.25 C-112.2500294736124 -128.25, -112.2500089472248 -128.25, -112.24995 -128.25 M-112.24995 -128.25 C-112.24995 -42.44941655391759, -112.24995 43.35116689216483, -112.24995 171 M-112.24995 -128.25 C-112.24995 -49.48690605067938, -112.24995 29.27618789864124, -112.24995 171 M-112.24995 171 C-112.24997654903302 171, -112.25000309806605 171, -112.25005 171 M-112.24995 171 C-112.24998093306358 171, -112.25001186612717 171, -112.25005 171 M-112.25005 171 C-112.25005 55.09287920965167, -112.25005 -60.81424158069666, -112.25005 -128.25 M-112.25005 171 C-112.25005 108.17744302911437, -112.25005 45.35488605822874, -112.25005 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-1.37505 -128.25 L-1.37495 -128.25 L-1.37495 171 L-1.37505 171" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-1.37505 -128.25 C-1.3750168765196567 -128.25, -1.3749837530393132 -128.25, -1.37495 -128.25 M-1.37505 -128.25 C-1.3750106951123686 -128.25, -1.3749713902247371 -128.25, -1.37495 -128.25 M-1.37495 -128.25 C-1.37495 -60.66003642189595, -1.37495 6.929927156208095, -1.37495 171 M-1.37495 -128.25 C-1.37495 -31.236141977814157, -1.37495 65.77771604437169, -1.37495 171 M-1.37495 171 C-1.3749798643026607 171, -1.3750097286053216 171, -1.37505 171 M-1.37495 171 C-1.3749724870906113 171, -1.3749949741812226 171, -1.37505 171 M-1.37505 171 C-1.37505 55.87967118129119, -1.37505 -59.24065763741763, -1.37505 -128.25 M-1.37505 171 C-1.37505 80.33729174209412, -1.37505 -10.325416515811753, -1.37505 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M43.6562 -128.25 L43.6563 -128.25 L43.6563 171 L43.6562 171" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M43.6562 -128.25 C43.65622848064804 -128.25, 43.65625696129608 -128.25, 43.6563 -128.25 M43.6562 -128.25 C43.656236777138325 -128.25, 43.65627355427666 -128.25, 43.6563 -128.25 M43.6563 -128.25 C43.6563 -31.101821651028843, 43.6563 66.04635669794231, 43.6563 171 M43.6563 -128.25 C43.6563 -15.651749406804711, 43.6563 96.94650118639058, 43.6563 171 M43.6563 171 C43.65626083554948 171, 43.65622167109896 171, 43.6562 171 M43.6563 171 C43.65627437172242 171, 43.656248743444834 171, 43.6562 171 M43.6562 171 C43.6562 84.41880604231659, 43.6562 -2.1623879153668213, 43.6562 -128.25 M43.6562 171 C43.6562 60.29095980944251, 43.6562 -50.418080381114976, 43.6562 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-202.5 -128.25005 L-202.5 -128.24995 L202.5 -128.24995 L202.5 -128.25005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-202.5 -128.25005 C-202.5 -128.25001934149776, -202.5 -128.24998868299556, -202.5 -128.24995 M-202.5 -128.25005 C-202.5 -128.25001392422618, -202.5 -128.24997784845237, -202.5 -128.24995 M-202.5 -128.24995 C-104.43755469839063 -128.24995, -6.375109396781255 -128.24995, 202.5 -128.24995 M-202.5 -128.24995 C-107.83825921337609 -128.24995, -13.176518426752182 -128.24995, 202.5 -128.24995 M202.5 -128.24995 C202.5 -128.24998954722253, 202.5 -128.25002909444504, 202.5 -128.25005 M202.5 -128.24995 C202.5 -128.24998852491015, 202.5 -128.25002704982032, 202.5 -128.25005 M202.5 -128.25005 C76.76402754016948 -128.25005, -48.97194491966104 -128.25005, -202.5 -128.25005 M202.5 -128.25005 C48.73890468521364 -128.25005, -105.02219062957272 -128.25005, -202.5 -128.25005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+        </g>
+        <g class="node default" id="container-entity-REQUEST-1" data-look="neo" transform="translate(882.37890625, 627.75)">
+          <g class="outer-path" style="">
+            <path d="M-313.9296875 -213.75 L313.9296875 -213.75 L313.9296875 213.75 L-313.9296875 213.75" stroke="none" stroke-width="0" fill="#ECECFF"></path>
+            <path d="M-313.9296875 -213.75 C-140.71515746931925 -213.75, 32.4993725613615 -213.75, 313.9296875 -213.75 M-313.9296875 -213.75 C-160.05868081493028 -213.75, -6.187674129860568 -213.75, 313.9296875 -213.75 M313.9296875 -213.75 C313.9296875 -114.93645656182319, 313.9296875 -16.122913123646384, 313.9296875 213.75 M313.9296875 -213.75 C313.9296875 -53.059264842741385, 313.9296875 107.63147031451723, 313.9296875 213.75 M313.9296875 213.75 C167.80550499305116 213.75, 21.681322486102317 213.75, -313.9296875 213.75 M313.9296875 213.75 C72.82670342305249 213.75, -168.27628065389501 213.75, -313.9296875 213.75 M-313.9296875 213.75 C-313.9296875 104.51207791652661, -313.9296875 -4.725844166946786, -313.9296875 -213.75 M-313.9296875 213.75 C-313.9296875 110.970408907223, -313.9296875 8.190817814446007, -313.9296875 -213.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-313.9296875 -171 L313.9296875 -171 L313.9296875 -128.25 L-313.9296875 -128.25" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-313.9296875 -171 C-157.0686073946981 -171, -0.20752728939618237 -171, 313.9296875 -171 M-313.9296875 -171 C-88.84671408417137 -171, 136.23625933165727 -171, 313.9296875 -171 M313.9296875 -171 C313.9296875 -155.45274665706654, 313.9296875 -139.90549331413305, 313.9296875 -128.25 M313.9296875 -171 C313.9296875 -155.28138432256952, 313.9296875 -139.56276864513907, 313.9296875 -128.25 M313.9296875 -128.25 C79.46147842638052 -128.25, -155.00673064723895 -128.25, -313.9296875 -128.25 M313.9296875 -128.25 C138.92391190255034 -128.25, -36.08186369489931 -128.25, -313.9296875 -128.25 M-313.9296875 -128.25 C-313.9296875 -143.78345575936552, -313.9296875 -159.31691151873102, -313.9296875 -171 M-313.9296875 -128.25 C-313.9296875 -138.68223336162396, -313.9296875 -149.1144667232479, -313.9296875 -171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-313.9296875 -128.25 L313.9296875 -128.25 L313.9296875 -85.5 L-313.9296875 -85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-313.9296875 -128.25 C-81.31635676600246 -128.25, 151.2969739679951 -128.25, 313.9296875 -128.25 M-313.9296875 -128.25 C-186.56437908600566 -128.25, -59.19907067201129 -128.25, 313.9296875 -128.25 M313.9296875 -128.25 C313.9296875 -117.89087685121052, 313.9296875 -107.53175370242103, 313.9296875 -85.5 M313.9296875 -128.25 C313.9296875 -116.11767586043179, 313.9296875 -103.98535172086356, 313.9296875 -85.5 M313.9296875 -85.5 C99.43384511326624 -85.5, -115.06199727346751 -85.5, -313.9296875 -85.5 M313.9296875 -85.5 C150.39639684514407 -85.5, -13.136893809711864 -85.5, -313.9296875 -85.5 M-313.9296875 -85.5 C-313.9296875 -99.95682343323499, -313.9296875 -114.41364686646997, -313.9296875 -128.25 M-313.9296875 -85.5 C-313.9296875 -95.22231752146592, -313.9296875 -104.94463504293185, -313.9296875 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-313.9296875 -85.5 L313.9296875 -85.5 L313.9296875 -42.75 L-313.9296875 -42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-313.9296875 -85.5 C-128.61896973570015 -85.5, 56.691748028599704 -85.5, 313.9296875 -85.5 M-313.9296875 -85.5 C-77.04378776342287 -85.5, 159.84211197315426 -85.5, 313.9296875 -85.5 M313.9296875 -85.5 C313.9296875 -74.46684244489961, 313.9296875 -63.43368488979923, 313.9296875 -42.75 M313.9296875 -85.5 C313.9296875 -74.7013825699275, 313.9296875 -63.902765139855, 313.9296875 -42.75 M313.9296875 -42.75 C111.71765742695308 -42.75, -90.49437264609384 -42.75, -313.9296875 -42.75 M313.9296875 -42.75 C79.09894026170832 -42.75, -155.73180697658336 -42.75, -313.9296875 -42.75 M-313.9296875 -42.75 C-313.9296875 -52.079217327062366, -313.9296875 -61.40843465412473, -313.9296875 -85.5 M-313.9296875 -42.75 C-313.9296875 -52.269396203340094, -313.9296875 -61.78879240668018, -313.9296875 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-313.9296875 -42.75 L313.9296875 -42.75 L313.9296875 0 L-313.9296875 0" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-313.9296875 -42.75 C-156.42154090146946 -42.75, 1.0866056970610884 -42.75, 313.9296875 -42.75 M-313.9296875 -42.75 C-135.39952369353227 -42.75, 43.13064011293545 -42.75, 313.9296875 -42.75 M313.9296875 -42.75 C313.9296875 -31.32846486743123, 313.9296875 -19.906929734862462, 313.9296875 0 M313.9296875 -42.75 C313.9296875 -28.664921206625653, 313.9296875 -14.579842413251306, 313.9296875 0 M313.9296875 0 C69.47892632800122 0, -174.97183484399756 0, -313.9296875 0 M313.9296875 0 C98.87677296432989 0, -116.17614157134022 0, -313.9296875 0 M-313.9296875 0 C-313.9296875 -12.802894981338127, -313.9296875 -25.605789962676255, -313.9296875 -42.75 M-313.9296875 0 C-313.9296875 -11.592663354205296, -313.9296875 -23.185326708410592, -313.9296875 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-313.9296875 0 L313.9296875 0 L313.9296875 42.75 L-313.9296875 42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-313.9296875 0 C-114.74049057158993 0, 84.44870635682014 0, 313.9296875 0 M-313.9296875 0 C-134.78795299635348 0, 44.353781507293036 0, 313.9296875 0 M313.9296875 0 C313.9296875 10.30132670409052, 313.9296875 20.60265340818104, 313.9296875 42.75 M313.9296875 0 C313.9296875 16.17033347258277, 313.9296875 32.34066694516554, 313.9296875 42.75 M313.9296875 42.75 C144.3333918646607 42.75, -25.262903770678577 42.75, -313.9296875 42.75 M313.9296875 42.75 C77.5854737207678 42.75, -158.7587400584644 42.75, -313.9296875 42.75 M-313.9296875 42.75 C-313.9296875 32.706039723032106, -313.9296875 22.66207944606422, -313.9296875 0 M-313.9296875 42.75 C-313.9296875 28.062558807958872, -313.9296875 13.375117615917748, -313.9296875 0" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-313.9296875 42.75 L313.9296875 42.75 L313.9296875 85.5 L-313.9296875 85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-313.9296875 42.75 C-83.21747261562251 42.75, 147.49474226875498 42.75, 313.9296875 42.75 M-313.9296875 42.75 C-94.06849960819318 42.75, 125.79268828361364 42.75, 313.9296875 42.75 M313.9296875 42.75 C313.9296875 51.40297174407221, 313.9296875 60.05594348814442, 313.9296875 85.5 M313.9296875 42.75 C313.9296875 54.95504270422316, 313.9296875 67.16008540844632, 313.9296875 85.5 M313.9296875 85.5 C154.07866012283372 85.5, -5.772367254332551 85.5, -313.9296875 85.5 M313.9296875 85.5 C104.54299711096283 85.5, -104.84369327807434 85.5, -313.9296875 85.5 M-313.9296875 85.5 C-313.9296875 73.01879286484044, -313.9296875 60.53758572968086, -313.9296875 42.75 M-313.9296875 85.5 C-313.9296875 76.53081441632702, -313.9296875 67.56162883265402, -313.9296875 42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-313.9296875 85.5 L313.9296875 85.5 L313.9296875 128.25 L-313.9296875 128.25" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-313.9296875 85.5 C-86.47239324288094 85.5, 140.98490101423812 85.5, 313.9296875 85.5 M-313.9296875 85.5 C-88.92240405620382 85.5, 136.08487938759237 85.5, 313.9296875 85.5 M313.9296875 85.5 C313.9296875 96.30556719284102, 313.9296875 107.11113438568206, 313.9296875 128.25 M313.9296875 85.5 C313.9296875 99.32515032188279, 313.9296875 113.15030064376558, 313.9296875 128.25 M313.9296875 128.25 C68.51228490366285 128.25, -176.9051176926743 128.25, -313.9296875 128.25 M313.9296875 128.25 C174.9969649946633 128.25, 36.0642424893266 128.25, -313.9296875 128.25 M-313.9296875 128.25 C-313.9296875 112.34613081532432, -313.9296875 96.44226163064863, -313.9296875 85.5 M-313.9296875 128.25 C-313.9296875 112.15109163756526, -313.9296875 96.05218327513052, -313.9296875 85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-313.9296875 128.25 L313.9296875 128.25 L313.9296875 171 L-313.9296875 171" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-313.9296875 128.25 C-122.03190274247476 128.25, 69.86588201505049 128.25, 313.9296875 128.25 M-313.9296875 128.25 C-105.7292114032374 128.25, 102.4712646935252 128.25, 313.9296875 128.25 M313.9296875 128.25 C313.9296875 141.9882441272087, 313.9296875 155.7264882544174, 313.9296875 171 M313.9296875 128.25 C313.9296875 139.42015894234578, 313.9296875 150.59031788469153, 313.9296875 171 M313.9296875 171 C98.92379378408077 171, -116.08209993183846 171, -313.9296875 171 M313.9296875 171 C65.2685912895247 171, -183.3925049209506 171, -313.9296875 171 M-313.9296875 171 C-313.9296875 162.07463589151652, -313.9296875 153.14927178303304, -313.9296875 128.25 M-313.9296875 171 C-313.9296875 162.1175435944379, -313.9296875 153.2350871888758, -313.9296875 128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-313.9296875 171 L313.9296875 171 L313.9296875 213.75 L-313.9296875 213.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-313.9296875 171 C-180.67176155894543 171, -47.41383561789087 171, 313.9296875 171 M-313.9296875 171 C-170.27992555151738 171, -26.63016360303476 171, 313.9296875 171 M313.9296875 171 C313.9296875 183.02317267540704, 313.9296875 195.0463453508141, 313.9296875 213.75 M313.9296875 171 C313.9296875 183.94094095169555, 313.9296875 196.88188190339113, 313.9296875 213.75 M313.9296875 213.75 C169.5571764881816 213.75, 25.184665476363193 213.75, -313.9296875 213.75 M313.9296875 213.75 C90.24276618332735 213.75, -133.4441551333453 213.75, -313.9296875 213.75 M-313.9296875 213.75 C-313.9296875 200.5035767771463, -313.9296875 187.25715355429261, -313.9296875 171 M-313.9296875 213.75 C-313.9296875 202.91278280505054, -313.9296875 192.07556561010105, -313.9296875 171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="label name" transform="translate(-32.375, -204.375)" style="">
+            <foreignObject width="64.75" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>REQUEST</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, -161.625)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, -161.625)" style="">
+            <foreignObject width="14.09375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 114px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, -161.625)" style="">
+            <foreignObject width="18.734375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 119px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>PK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, -161.625)" style="">
+            <foreignObject width="105.71875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 206px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Номер заявки</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, -118.875)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, -118.875)" style="">
+            <foreignObject width="93.15625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 193px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>employee_id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, -118.875)" style="">
+            <foreignObject width="17.28125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 118px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>FK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, -118.875)" style="">
+            <foreignObject width="77.34375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 177px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Заявитель</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, -76.125)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, -76.125)" style="">
+            <foreignObject width="91.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 191px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>specialist_id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, -76.125)" style="">
+            <foreignObject width="17.28125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 118px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>FK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, -76.125)" style="">
+            <foreignObject width="292.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 392px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Исполнитель (NULL, пока не назначен)</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, -33.375)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, -33.375)" style="">
+            <foreignObject width="141.078125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 241px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>equipment_type_id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, -33.375)" style="">
+            <foreignObject width="17.28125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 118px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>FK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, -33.375)" style="">
+            <foreignObject width="139.875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 240px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Тип оборудования</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, 9.375)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, 9.375)" style="">
+            <foreignObject width="66.484375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 166px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>status_id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, 9.375)" style="">
+            <foreignObject width="17.28125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 118px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>FK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, 9.375)" style="">
+            <foreignObject width="113.75" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 214px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Текущий статус</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, 52.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, 52.125)" style="">
+            <foreignObject width="151.703125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 252px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>problem_description</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, 52.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, 52.125)" style="">
+            <foreignObject width="156.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 256px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Описание проблемы</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, 94.875)" style="">
+            <foreignObject width="65.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>datetime</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, 94.875)" style="">
+            <foreignObject width="76.921875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 177px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>created_at</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, 94.875)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, 94.875)" style="">
+            <foreignObject width="107.34375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 208px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Дата создания</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, 137.625)" style="">
+            <foreignObject width="65.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>datetime</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, 137.625)" style="">
+            <foreignObject width="83.40625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 184px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>updated_at</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, 137.625)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, 137.625)" style="">
+            <foreignObject width="120.859375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 222px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Дата изменения</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-301.4296875, 180.375)" style="">
+            <foreignObject width="65.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>datetime</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-211.1796875, 180.375)" style="">
+            <foreignObject width="99.53125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>completed_at</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-34.4765625, 180.375)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(9.2578125, 180.375)" style="">
+            <foreignObject width="132.40625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 233px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Дата выполнения</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="divider">
+            <path d="M-313.9296875 -171.00005 L-313.9296875 -170.99995 L313.9296875 -170.99995 L313.9296875 -171.00005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-313.9296875 -171.00005 C-313.9296875 -171.00002121006145, -313.9296875 -170.99999242012294, -313.9296875 -170.99995 M-313.9296875 -171.00005 C-313.9296875 -171.00002100477005, -313.9296875 -170.99999200954008, -313.9296875 -170.99995 M-313.9296875 -170.99995 C-135.86924151184817 -170.99995, 42.19120447630365 -170.99995, 313.9296875 -170.99995 M-313.9296875 -170.99995 C-145.1559725388663 -170.99995, 23.617742422267384 -170.99995, 313.9296875 -170.99995 M313.9296875 -170.99995 C313.9296875 -170.99998494847227, 313.9296875 -171.00001989694456, 313.9296875 -171.00005 M313.9296875 -170.99995 C313.9296875 -170.99997697460725, 313.9296875 -171.00000394921452, 313.9296875 -171.00005 M313.9296875 -171.00005 C150.07000578981365 -171.00005, -13.789675920372702 -171.00005, -313.9296875 -171.00005 M313.9296875 -171.00005 C75.07592799618706 -171.00005, -163.77783150762588 -171.00005, -313.9296875 -171.00005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-223.6797375 -171 L-223.6796375 -171 L-223.6796375 213.75 L-223.6797375 213.75" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-223.6797375 -171 C-223.6797091849308 -171, -223.6796808698616 -171, -223.6796375 -171 M-223.6797375 -171 C-223.67971475670103 -171, -223.6796920134021 -171, -223.6796375 -171 M-223.6796375 -171 C-223.6796375 -27.297832490460905, -223.6796375 116.40433501907819, -223.6796375 213.75 M-223.6796375 -171 C-223.6796375 -23.306850385722754, -223.6796375 124.38629922855449, -223.6796375 213.75 M-223.6796375 213.75 C-223.67966787835778 213.75, -223.67969825671554 213.75, -223.6797375 213.75 M-223.6796375 213.75 C-223.67966096940873 213.75, -223.67968443881747 213.75, -223.6797375 213.75 M-223.6797375 213.75 C-223.6797375 130.90168773367816, -223.6797375 48.05337546735629, -223.6797375 -171 M-223.6797375 213.75 C-223.6797375 135.27023731562736, -223.6797375 56.79047463125474, -223.6797375 -171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-46.9766125 -171 L-46.9765125 -171 L-46.9765125 213.75 L-46.9766125 213.75" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-46.9766125 -171 C-46.976585157574156 -171, -46.97655781514831 -171, -46.9765125 -171 M-46.9766125 -171 C-46.97658498043044 -171, -46.976557460860874 -171, -46.9765125 -171 M-46.9765125 -171 C-46.9765125 -68.06423338416384, -46.9765125 34.871533231672316, -46.9765125 213.75 M-46.9765125 -171 C-46.9765125 -50.27949646663505, -46.9765125 70.4410070667299, -46.9765125 213.75 M-46.9765125 213.75 C-46.97654203799045 213.75, -46.97657157598089 213.75, -46.9766125 213.75 M-46.9765125 213.75 C-46.976551208252175 213.75, -46.97658991650435 213.75, -46.9766125 213.75 M-46.9766125 213.75 C-46.9766125 110.68337889092783, -46.9766125 7.616757781855654, -46.9766125 -171 M-46.9766125 213.75 C-46.9766125 74.50238735584921, -46.9766125 -64.74522528830158, -46.9766125 -171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-3.2422375 -171 L-3.2421375 -171 L-3.2421375 213.75 L-3.2422375 213.75" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-3.2422375 -171 C-3.242206734480484 -171, -3.2421759689609684 -171, -3.2421375 -171 M-3.2422375 -171 C-3.2422142773437352 -171, -3.2421910546874706 -171, -3.2421375 -171 M-3.2421375 -171 C-3.2421375 -80.60452334537251, -3.2421375 9.790953309254974, -3.2421375 213.75 M-3.2421375 -171 C-3.2421375 -49.21718482985827, -3.2421375 72.56563034028346, -3.2421375 213.75 M-3.2421375 213.75 C-3.242160927677338 213.75, -3.242184355354676 213.75, -3.2422375 213.75 M-3.2421375 213.75 C-3.2421603156266556 213.75, -3.242183131253311 213.75, -3.2422375 213.75 M-3.2422375 213.75 C-3.2422375 88.56230672676188, -3.2422375 -36.62538654647625, -3.2422375 -171 M-3.2422375 213.75 C-3.2422375 64.73806728782671, -3.2422375 -84.27386542434658, -3.2422375 -171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-313.9296875 -171.00005 L-313.9296875 -170.99995 L313.9296875 -170.99995 L313.9296875 -171.00005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-313.9296875 -171.00005 C-313.9296875 -171.00001297935793, -313.9296875 -170.99997595871588, -313.9296875 -170.99995 M-313.9296875 -171.00005 C-313.9296875 -171.0000208871527, -313.9296875 -170.99999177430539, -313.9296875 -170.99995 M-313.9296875 -170.99995 C-187.44314311373495 -170.99995, -60.956598727469895 -170.99995, 313.9296875 -170.99995 M-313.9296875 -170.99995 C-128.34013073454224 -170.99995, 57.249426030915515 -170.99995, 313.9296875 -170.99995 M313.9296875 -170.99995 C313.9296875 -170.99998094875315, 313.9296875 -171.00001189750625, 313.9296875 -171.00005 M313.9296875 -170.99995 C313.9296875 -170.99997290028537, 313.9296875 -170.99999580057073, 313.9296875 -171.00005 M313.9296875 -171.00005 C179.15927660000975 -171.00005, 44.388865700019494 -171.00005, -313.9296875 -171.00005 M313.9296875 -171.00005 C99.88942138174562 -171.00005, -114.15084473650876 -171.00005, -313.9296875 -171.00005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+        </g>
+        <g class="node default" id="container-entity-SPECIALIST-2" data-look="neo" transform="translate(666.6015625, 183)">
+          <g class="outer-path" style="">
+            <path d="M-209.6015625 -171 L209.6015625 -171 L209.6015625 171 L-209.6015625 171" stroke="none" stroke-width="0" fill="#ECECFF"></path>
+            <path d="M-209.6015625 -171 C-69.36518314587948 -171, 70.87119620824103 -171, 209.6015625 -171 M-209.6015625 -171 C-58.459176935293556 -171, 92.68320862941289 -171, 209.6015625 -171 M209.6015625 -171 C209.6015625 -67.20939892376936, 209.6015625 36.58120215246129, 209.6015625 171 M209.6015625 -171 C209.6015625 -43.09174252967661, 209.6015625 84.81651494064678, 209.6015625 171 M209.6015625 171 C107.07462749595732 171, 4.547692491914631 171, -209.6015625 171 M209.6015625 171 C70.88919208155104 171, -67.82317833689791 171, -209.6015625 171 M-209.6015625 171 C-209.6015625 97.36703960829064, -209.6015625 23.73407921658128, -209.6015625 -171 M-209.6015625 171 C-209.6015625 53.73923470325536, -209.6015625 -63.521530593489274, -209.6015625 -171" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-209.6015625 -128.25 L209.6015625 -128.25 L209.6015625 -85.5 L-209.6015625 -85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-209.6015625 -128.25 C-81.71226007478059 -128.25, 46.177042350438825 -128.25, 209.6015625 -128.25 M-209.6015625 -128.25 C-111.09408538309854 -128.25, -12.58660826619709 -128.25, 209.6015625 -128.25 M209.6015625 -128.25 C209.6015625 -114.17807884649193, 209.6015625 -100.10615769298384, 209.6015625 -85.5 M209.6015625 -128.25 C209.6015625 -113.39892790123267, 209.6015625 -98.54785580246534, 209.6015625 -85.5 M209.6015625 -85.5 C63.11589655994197 -85.5, -83.36976938011605 -85.5, -209.6015625 -85.5 M209.6015625 -85.5 C69.63920213835294 -85.5, -70.32315822329412 -85.5, -209.6015625 -85.5 M-209.6015625 -85.5 C-209.6015625 -100.66111239698796, -209.6015625 -115.82222479397593, -209.6015625 -128.25 M-209.6015625 -85.5 C-209.6015625 -102.44017624437365, -209.6015625 -119.38035248874729, -209.6015625 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-209.6015625 -85.5 L209.6015625 -85.5 L209.6015625 -42.75 L-209.6015625 -42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-209.6015625 -85.5 C-76.63762935157078 -85.5, 56.32630379685844 -85.5, 209.6015625 -85.5 M-209.6015625 -85.5 C-105.89326181552273 -85.5, -2.184961131045469 -85.5, 209.6015625 -85.5 M209.6015625 -85.5 C209.6015625 -73.39212998569907, 209.6015625 -61.28425997139814, 209.6015625 -42.75 M209.6015625 -85.5 C209.6015625 -73.2113433401188, 209.6015625 -60.92268668023759, 209.6015625 -42.75 M209.6015625 -42.75 C65.55020650292141 -42.75, -78.50114949415718 -42.75, -209.6015625 -42.75 M209.6015625 -42.75 C83.85177691104755 -42.75, -41.8980086779049 -42.75, -209.6015625 -42.75 M-209.6015625 -42.75 C-209.6015625 -58.819345248287604, -209.6015625 -74.88869049657521, -209.6015625 -85.5 M-209.6015625 -42.75 C-209.6015625 -53.59036456864462, -209.6015625 -64.43072913728923, -209.6015625 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-209.6015625 -42.75 L209.6015625 -42.75 L209.6015625 0 L-209.6015625 0" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-209.6015625 -42.75 C-116.45876866341125 -42.75, -23.315974826822497 -42.75, 209.6015625 -42.75 M-209.6015625 -42.75 C-44.22870816689496 -42.75, 121.14414616621008 -42.75, 209.6015625 -42.75 M209.6015625 -42.75 C209.6015625 -28.053767677031228, 209.6015625 -13.357535354062456, 209.6015625 0 M209.6015625 -42.75 C209.6015625 -28.056330647651002, 209.6015625 -13.362661295302008, 209.6015625 0 M209.6015625 0 C87.31398982569264 0, -34.97358284861471 0, -209.6015625 0 M209.6015625 0 C73.57059612437448 0, -62.46037025125105 0, -209.6015625 0 M-209.6015625 0 C-209.6015625 -9.639748406851986, -209.6015625 -19.27949681370397, -209.6015625 -42.75 M-209.6015625 0 C-209.6015625 -16.1832834768975, -209.6015625 -32.366566953795, -209.6015625 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-209.6015625 0 L209.6015625 0 L209.6015625 42.75 L-209.6015625 42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-209.6015625 0 C-110.21754472084552 0, -10.833526941691048 0, 209.6015625 0 M-209.6015625 0 C-99.62119735274554 0, 10.35916779450892 0, 209.6015625 0 M209.6015625 0 C209.6015625 15.85454420730129, 209.6015625 31.70908841460258, 209.6015625 42.75 M209.6015625 0 C209.6015625 12.160140719506042, 209.6015625 24.320281439012085, 209.6015625 42.75 M209.6015625 42.75 C60.18556408810625 42.75, -89.2304343237875 42.75, -209.6015625 42.75 M209.6015625 42.75 C120.51632091214337 42.75, 31.431079324286742 42.75, -209.6015625 42.75 M-209.6015625 42.75 C-209.6015625 26.236957223441184, -209.6015625 9.723914446882368, -209.6015625 0 M-209.6015625 42.75 C-209.6015625 30.153043473176446, -209.6015625 17.556086946352895, -209.6015625 0" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-209.6015625 42.75 L209.6015625 42.75 L209.6015625 85.5 L-209.6015625 85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-209.6015625 42.75 C-76.2419209435609 42.75, 57.1177206128782 42.75, 209.6015625 42.75 M-209.6015625 42.75 C-105.40358836662583 42.75, -1.2056142332516515 42.75, 209.6015625 42.75 M209.6015625 42.75 C209.6015625 58.66664866309918, 209.6015625 74.58329732619836, 209.6015625 85.5 M209.6015625 42.75 C209.6015625 57.496963775539385, 209.6015625 72.24392755107877, 209.6015625 85.5 M209.6015625 85.5 C124.67901172980126 85.5, 39.75646095960252 85.5, -209.6015625 85.5 M209.6015625 85.5 C53.826414943169 85.5, -101.948732613662 85.5, -209.6015625 85.5 M-209.6015625 85.5 C-209.6015625 70.33696153610248, -209.6015625 55.17392307220497, -209.6015625 42.75 M-209.6015625 85.5 C-209.6015625 74.10671468867679, -209.6015625 62.713429377353584, -209.6015625 42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-209.6015625 85.5 L209.6015625 85.5 L209.6015625 128.25 L-209.6015625 128.25" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-209.6015625 85.5 C-55.16060626787805 85.5, 99.2803499642439 85.5, 209.6015625 85.5 M-209.6015625 85.5 C-65.40999509462512 85.5, 78.78157231074977 85.5, 209.6015625 85.5 M209.6015625 85.5 C209.6015625 95.35199937375465, 209.6015625 105.20399874750929, 209.6015625 128.25 M209.6015625 85.5 C209.6015625 95.16739159388707, 209.6015625 104.83478318777415, 209.6015625 128.25 M209.6015625 128.25 C76.83716760532545 128.25, -55.927227289349105 128.25, -209.6015625 128.25 M209.6015625 128.25 C44.35525038266715 128.25, -120.8910617346657 128.25, -209.6015625 128.25 M-209.6015625 128.25 C-209.6015625 119.37405774319576, -209.6015625 110.49811548639153, -209.6015625 85.5 M-209.6015625 128.25 C-209.6015625 115.80276798146332, -209.6015625 103.35553596292665, -209.6015625 85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-209.6015625 128.25 L209.6015625 128.25 L209.6015625 171 L-209.6015625 171" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-209.6015625 128.25 C-79.22845528695959 128.25, 51.144651926080826 128.25, 209.6015625 128.25 M-209.6015625 128.25 C-71.90027515440957 128.25, 65.80101219118086 128.25, 209.6015625 128.25 M209.6015625 128.25 C209.6015625 139.588686582944, 209.6015625 150.927373165888, 209.6015625 171 M209.6015625 128.25 C209.6015625 136.9800529866278, 209.6015625 145.7101059732556, 209.6015625 171 M209.6015625 171 C98.71805646382496 171, -12.16544957235007 171, -209.6015625 171 M209.6015625 171 C115.0843724452281 171, 20.567182390456196 171, -209.6015625 171 M-209.6015625 171 C-209.6015625 158.06314072967447, -209.6015625 145.12628145934895, -209.6015625 128.25 M-209.6015625 171 C-209.6015625 157.8483270369288, -209.6015625 144.6966540738576, -209.6015625 128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="label name" transform="translate(-39.28125, -161.625)" style="">
+            <foreignObject width="78.5625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 179px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>SPECIALIST</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, -118.875)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, -118.875)" style="">
+            <foreignObject width="14.09375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 114px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, -118.875)" style="">
+            <foreignObject width="18.734375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 119px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>PK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, -118.875)" style="">
+            <foreignObject width="119.625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 220px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Идентификатор</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, -76.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, -76.125)" style="">
+            <foreignObject width="72.890625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 173px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>full_name</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, -76.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, -76.125)" style="">
+            <foreignObject width="35.125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 135px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>ФИО</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, -33.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, -33.375)" style="">
+            <foreignObject width="100.078125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>specialization</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, -33.375)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, -33.375)" style="">
+            <foreignObject width="117.6875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 218px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Специализация</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, 9.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, 9.375)" style="">
+            <foreignObject width="36.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>login</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, 9.375)" style="">
+            <foreignObject width="20.03125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>UK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, 9.375)" style="">
+            <foreignObject width="45.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 146px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Логин</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, 52.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, 52.125)" style="">
+            <foreignObject width="68.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 169px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>password</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, 52.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, 52.125)" style="">
+            <foreignObject width="55.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 156px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Пароль</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, 94.875)" style="">
+            <foreignObject width="32.890625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 133px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>bool</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, 94.875)" style="">
+            <foreignObject width="62.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 163px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>is_active</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, 94.875)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, 94.875)" style="">
+            <foreignObject width="61.46875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 161px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Активен</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-197.1015625, 137.625)" style="">
+            <foreignObject width="65.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>datetime</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-106.8515625, 137.625)" style="">
+            <foreignObject width="76.921875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 177px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>created_at</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(18.2265625, 137.625)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(63.2578125, 137.625)" style="">
+            <foreignObject width="133.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 235px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Дата регистрации</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="divider">
+            <path d="M-209.6015625 -128.25005 L-209.6015625 -128.24995 L209.6015625 -128.24995 L209.6015625 -128.25005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-209.6015625 -128.25005 C-209.6015625 -128.25002055492035, -209.6015625 -128.24999110984075, -209.6015625 -128.24995 M-209.6015625 -128.25005 C-209.6015625 -128.2500124015942, -209.6015625 -128.2499748031884, -209.6015625 -128.24995 M-209.6015625 -128.24995 C-67.16540072017284 -128.24995, 75.27076105965432 -128.24995, 209.6015625 -128.24995 M-209.6015625 -128.24995 C-91.40825466703424 -128.24995, 26.785053165931515 -128.24995, 209.6015625 -128.24995 M209.6015625 -128.24995 C209.6015625 -128.24997557507544, 209.6015625 -128.2500011501509, 209.6015625 -128.25005 M209.6015625 -128.24995 C209.6015625 -128.24998311693167, 209.6015625 -128.2500162338633, 209.6015625 -128.25005 M209.6015625 -128.25005 C67.97402744253799 -128.25005, -73.65350761492402 -128.25005, -209.6015625 -128.25005 M209.6015625 -128.25005 C73.77804603088478 -128.25005, -62.04547043823044 -128.25005, -209.6015625 -128.25005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-119.3516125 -128.25 L-119.3515125 -128.25 L-119.3515125 171 L-119.3516125 171" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-119.3516125 -128.25 C-119.35157382782687 -128.25, -119.35153515565375 -128.25, -119.3515125 -128.25 M-119.3516125 -128.25 C-119.35157896109705 -128.25, -119.35154542219408 -128.25, -119.3515125 -128.25 M-119.3515125 -128.25 C-119.3515125 -22.442252478361, -119.3515125 83.365495043278, -119.3515125 171 M-119.3515125 -128.25 C-119.3515125 -33.38772839478514, -119.3515125 61.474543210429715, -119.3515125 171 M-119.3515125 171 C-119.35155080326342 171, -119.35158910652684 171, -119.3516125 171 M-119.3515125 171 C-119.35153736971995 171, -119.3515622394399 171, -119.3516125 171 M-119.3516125 171 C-119.3516125 56.94883189155894, -119.3516125 -57.10233621688212, -119.3516125 -128.25 M-119.3516125 171 C-119.3516125 91.68180061623029, -119.3516125 12.363601232460582, -119.3516125 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M5.7265125 -128.25 L5.7266125 -128.25 L5.7266125 171 L5.7265125 171" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M5.7265125 -128.25 C5.726534864202306 -128.25, 5.726557228404613 -128.25, 5.7266125 -128.25 M5.7265125 -128.25 C5.726552248137794 -128.25, 5.726591996275587 -128.25, 5.7266125 -128.25 M5.7266125 -128.25 C5.7266125 -36.883302937748, 5.7266125 54.483394124504, 5.7266125 171 M5.7266125 -128.25 C5.7266125 -50.485361676896574, 5.7266125 27.279276646206853, 5.7266125 171 M5.7266125 171 C5.726586818468748 171, 5.726561136937496 171, 5.7265125 171 M5.7266125 171 C5.72657405153711 171, 5.726535603074221 171, 5.7265125 171 M5.7265125 171 C5.7265125 53.6082626835381, 5.7265125 -63.7834746329238, 5.7265125 -128.25 M5.7265125 171 C5.7265125 66.4627719719144, 5.7265125 -38.074456056171186, 5.7265125 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M50.7577625 -128.25 L50.7578625 -128.25 L50.7578625 171 L50.7577625 171" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M50.7577625 -128.25 C50.757783458203434 -128.25, 50.75780441640686 -128.25, 50.7578625 -128.25 M50.7577625 -128.25 C50.75779872415288 -128.25, 50.75783494830576 -128.25, 50.7578625 -128.25 M50.7578625 -128.25 C50.7578625 -38.81649337807521, 50.7578625 50.617013243849584, 50.7578625 171 M50.7578625 -128.25 C50.7578625 -46.74176376551601, 50.7578625 34.766472468967976, 50.7578625 171 M50.7578625 171 C50.75784245382643 171, 50.75782240765285 171, 50.7577625 171 M50.7578625 171 C50.75784118254352 171, 50.75781986508704 171, 50.7577625 171 M50.7577625 171 C50.7577625 81.45470177805272, 50.7577625 -8.090596443894555, 50.7577625 -128.25 M50.7577625 171 C50.7577625 67.18430005608714, 50.7577625 -36.63139988782572, 50.7577625 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-209.6015625 -128.25005 L-209.6015625 -128.24995 L209.6015625 -128.24995 L209.6015625 -128.25005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-209.6015625 -128.25005 C-209.6015625 -128.25002977539452, -209.6015625 -128.2500095507891, -209.6015625 -128.24995 M-209.6015625 -128.25005 C-209.6015625 -128.25002715764083, -209.6015625 -128.25000431528167, -209.6015625 -128.24995 M-209.6015625 -128.24995 C-74.91250391643294 -128.24995, 59.77655466713412 -128.24995, 209.6015625 -128.24995 M-209.6015625 -128.24995 C-43.229384201199224 -128.24995, 123.14279409760155 -128.24995, 209.6015625 -128.24995 M209.6015625 -128.24995 C209.6015625 -128.24998823227963, 209.6015625 -128.25002646455926, 209.6015625 -128.25005 M209.6015625 -128.24995 C209.6015625 -128.2499771772542, 209.6015625 -128.25000435450843, 209.6015625 -128.25005 M209.6015625 -128.25005 C72.17623189926618 -128.25005, -65.24909870146763 -128.25005, -209.6015625 -128.25005 M209.6015625 -128.25005 C64.15302099577218 -128.25005, -81.29552050845564 -128.25005, -209.6015625 -128.25005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+        </g>
+        <g class="node default" id="container-entity-EQUIPMENT_TYPE-3" data-look="neo" transform="translate(1098.15625, 268.5)">
+          <g class="outer-path" style="">
+            <path d="M-181.953125 -85.5 L181.953125 -85.5 L181.953125 85.5 L-181.953125 85.5" stroke="none" stroke-width="0" fill="#ECECFF"></path>
+            <path d="M-181.953125 -85.5 C-77.28116054040228 -85.5, 27.390803919195434 -85.5, 181.953125 -85.5 M-181.953125 -85.5 C-48.196214323881776 -85.5, 85.56069635223645 -85.5, 181.953125 -85.5 M181.953125 -85.5 C181.953125 -22.950244620745842, 181.953125 39.599510758508316, 181.953125 85.5 M181.953125 -85.5 C181.953125 -44.97454345378334, 181.953125 -4.449086907566681, 181.953125 85.5 M181.953125 85.5 C97.9814495181318 85.5, 14.009774036263593 85.5, -181.953125 85.5 M181.953125 85.5 C106.83460860087887 85.5, 31.716092201757732 85.5, -181.953125 85.5 M-181.953125 85.5 C-181.953125 22.6327226692432, -181.953125 -40.2345546615136, -181.953125 -85.5 M-181.953125 85.5 C-181.953125 20.790088077550806, -181.953125 -43.91982384489839, -181.953125 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-181.953125 -42.75 L181.953125 -42.75 L181.953125 0 L-181.953125 0" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-181.953125 -42.75 C-70.21172638365721 -42.75, 41.529672232685584 -42.75, 181.953125 -42.75 M-181.953125 -42.75 C-55.41922572665037 -42.75, 71.11467354669927 -42.75, 181.953125 -42.75 M181.953125 -42.75 C181.953125 -28.652087081634352, 181.953125 -14.554174163268705, 181.953125 0 M181.953125 -42.75 C181.953125 -26.868127238823064, 181.953125 -10.986254477646128, 181.953125 0 M181.953125 0 C60.894033207472546 0, -60.16505858505491 0, -181.953125 0 M181.953125 0 C68.18804926169672 0, -45.57702647660656 0, -181.953125 0 M-181.953125 0 C-181.953125 -13.728626114878422, -181.953125 -27.457252229756843, -181.953125 -42.75 M-181.953125 0 C-181.953125 -11.710761236775362, -181.953125 -23.421522473550723, -181.953125 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-181.953125 0 L181.953125 0 L181.953125 42.75 L-181.953125 42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-181.953125 0 C-91.79463782541146 0, -1.6361506508229127 0, 181.953125 0 M-181.953125 0 C-70.4889510938136 0, 40.975222812372806 0, 181.953125 0 M181.953125 0 C181.953125 15.069146433581377, 181.953125 30.138292867162754, 181.953125 42.75 M181.953125 0 C181.953125 15.440745435513456, 181.953125 30.881490871026912, 181.953125 42.75 M181.953125 42.75 C104.8604170056818 42.75, 27.767709011363593 42.75, -181.953125 42.75 M181.953125 42.75 C55.31880668520732 42.75, -71.31551162958536 42.75, -181.953125 42.75 M-181.953125 42.75 C-181.953125 28.666910566341954, -181.953125 14.583821132683905, -181.953125 0 M-181.953125 42.75 C-181.953125 32.0387882115135, -181.953125 21.327576423027, -181.953125 0" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-181.953125 42.75 L181.953125 42.75 L181.953125 85.5 L-181.953125 85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-181.953125 42.75 C-100.88736842623932 42.75, -19.82161185247864 42.75, 181.953125 42.75 M-181.953125 42.75 C-46.132077199686904 42.75, 89.68897060062619 42.75, 181.953125 42.75 M181.953125 42.75 C181.953125 58.67186470679971, 181.953125 74.59372941359942, 181.953125 85.5 M181.953125 42.75 C181.953125 52.80627661182841, 181.953125 62.86255322365682, 181.953125 85.5 M181.953125 85.5 C59.04412520307618 85.5, -63.864874593847645 85.5, -181.953125 85.5 M181.953125 85.5 C67.71806792245197 85.5, -46.51698915509607 85.5, -181.953125 85.5 M-181.953125 85.5 C-181.953125 73.32629654328268, -181.953125 61.152593086565375, -181.953125 42.75 M-181.953125 85.5 C-181.953125 74.9101503778808, -181.953125 64.32030075576158, -181.953125 42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="label name" transform="translate(-62.7109375, -76.125)" style="">
+            <foreignObject width="125.421875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 225px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>EQUIPMENT_TYPE</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-169.453125, -33.375)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-102.8125, -33.375)" style="">
+            <foreignObject width="14.09375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 114px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(4.796875, -33.375)" style="">
+            <foreignObject width="18.734375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 119px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>PK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(49.828125, -33.375)" style="">
+            <foreignObject width="119.625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 220px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Идентификатор</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-169.453125, 9.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-102.8125, 9.375)" style="">
+            <foreignObject width="40.515625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 141px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>name</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(4.796875, 9.375)" style="">
+            <foreignObject width="20.03125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>UK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(49.828125, 9.375)" style="">
+            <foreignObject width="112.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 212px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Название типа</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-169.453125, 52.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-102.8125, 52.125)" style="">
+            <foreignObject width="82.609375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 183px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>description</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(4.796875, 52.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(49.828125, 52.125)" style="">
+            <foreignObject width="74.125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 174px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Описание</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="divider">
+            <path d="M-181.953125 -42.75005 L-181.953125 -42.74995 L181.953125 -42.74995 L181.953125 -42.75005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-181.953125 -42.75005 C-181.953125 -42.75002498046403, -181.953125 -42.74999996092807, -181.953125 -42.74995 M-181.953125 -42.75005 C-181.953125 -42.75002136768878, -181.953125 -42.74999273537756, -181.953125 -42.74995 M-181.953125 -42.74995 C-91.54640174191312 -42.74995, -1.1396784838262306 -42.74995, 181.953125 -42.74995 M-181.953125 -42.74995 C-46.67696281778581 -42.74995, 88.59919936442839 -42.74995, 181.953125 -42.74995 M181.953125 -42.74995 C181.953125 -42.74997396188638, 181.953125 -42.74999792377277, 181.953125 -42.75005 M181.953125 -42.74995 C181.953125 -42.74998521460522, 181.953125 -42.75002042921043, 181.953125 -42.75005 M181.953125 -42.75005 C65.85358785999769 -42.75005, -50.24594928000462 -42.75005, -181.953125 -42.75005 M181.953125 -42.75005 C76.29218109104592 -42.75005, -29.368762817908163 -42.75005, -181.953125 -42.75005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-115.31255 -42.75 L-115.31245 -42.75 L-115.31245 85.5 L-115.31255 85.5" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-115.31255 -42.75 C-115.31251140950633 -42.75, -115.31247281901264 -42.75, -115.31245 -42.75 M-115.31255 -42.75 C-115.3125287019337 -42.75, -115.31250740386739 -42.75, -115.31245 -42.75 M-115.31245 -42.75 C-115.31245 -14.25162467414306, -115.31245 14.246750651713882, -115.31245 85.5 M-115.31245 -42.75 C-115.31245 5.431990395785753, -115.31245 53.61398079157151, -115.31245 85.5 M-115.31245 85.5 C-115.31248005640816 85.5, -115.31251011281634 85.5, -115.31255 85.5 M-115.31245 85.5 C-115.31248786103271 85.5, -115.31252572206542 85.5, -115.31255 85.5 M-115.31255 85.5 C-115.31255 48.49712062601284, -115.31255 11.494241252025674, -115.31255 -42.75 M-115.31255 85.5 C-115.31255 58.67317178444422, -115.31255 31.846343568888436, -115.31255 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-7.703175 -42.75 L-7.703075 -42.75 L-7.703075 85.5 L-7.703175 85.5" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-7.703175 -42.75 C-7.703150551308556 -42.75, -7.703126102617112 -42.75, -7.703075 -42.75 M-7.703175 -42.75 C-7.703142229705636 -42.75, -7.70310945941127 -42.75, -7.703075 -42.75 M-7.703075 -42.75 C-7.703075 3.2232820098373622, -7.703075 49.196564019674724, -7.703075 85.5 M-7.703075 -42.75 C-7.703075 3.8980812343151428, -7.703075 50.546162468630286, -7.703075 85.5 M-7.703075 85.5 C-7.703114944402456 85.5, -7.703154888804911 85.5, -7.703175 85.5 M-7.703075 85.5 C-7.703110026882715 85.5, -7.70314505376543 85.5, -7.703175 85.5 M-7.703175 85.5 C-7.703175 37.73686580075174, -7.703175 -10.026268398496526, -7.703175 -42.75 M-7.703175 85.5 C-7.703175 55.35749262745157, -7.703175 25.21498525490314, -7.703175 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M37.328075 -42.75 L37.328175 -42.75 L37.328175 85.5 L37.328075 85.5" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M37.328075 -42.75 C37.328096719836964 -42.75, 37.32811843967392 -42.75, 37.328175 -42.75 M37.328075 -42.75 C37.32810854928003 -42.75, 37.328142098560065 -42.75, 37.328175 -42.75 M37.328175 -42.75 C37.328175 -1.5352788415116052, 37.328175 39.67944231697679, 37.328175 85.5 M37.328175 -42.75 C37.328175 -7.848257810565244, 37.328175 27.053484378869513, 37.328175 85.5 M37.328175 85.5 C37.32814636727989 85.5, 37.328117734559775 85.5, 37.328075 85.5 M37.328175 85.5 C37.32815422776921 85.5, 37.32813345553842 85.5, 37.328075 85.5 M37.328075 85.5 C37.328075 36.616251330371774, 37.328075 -12.267497339256451, 37.328075 -42.75 M37.328075 85.5 C37.328075 57.770533908541395, 37.328075 30.04106781708279, 37.328075 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-181.953125 -42.75005 L-181.953125 -42.74995 L181.953125 -42.74995 L181.953125 -42.75005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-181.953125 -42.75005 C-181.953125 -42.7500277292526, -181.953125 -42.7500054585052, -181.953125 -42.74995 M-181.953125 -42.75005 C-181.953125 -42.75001128916869, -181.953125 -42.74997257833738, -181.953125 -42.74995 M-181.953125 -42.74995 C-43.43082886127263 -42.74995, 95.09146727745474 -42.74995, 181.953125 -42.74995 M-181.953125 -42.74995 C-89.12659316749773 -42.74995, 3.699938665004538 -42.74995, 181.953125 -42.74995 M181.953125 -42.74995 C181.953125 -42.749988517295826, 181.953125 -42.750027034591646, 181.953125 -42.75005 M181.953125 -42.74995 C181.953125 -42.74998006465376, 181.953125 -42.750010129307526, 181.953125 -42.75005 M181.953125 -42.75005 C43.39246397961935 -42.75005, -95.1681970407613 -42.75005, -181.953125 -42.75005 M181.953125 -42.75005 C105.43890216915149 -42.75005, 28.92467933830298 -42.75005, -181.953125 -42.75005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+        </g>
+        <g class="node default" id="container-entity-STATUS-4" data-look="neo" transform="translate(1523.8359375, 268.5)">
+          <g class="outer-path" style="">
+            <path d="M-203.7265625 -85.5 L203.7265625 -85.5 L203.7265625 85.5 L-203.7265625 85.5" stroke="none" stroke-width="0" fill="#ECECFF"></path>
+            <path d="M-203.7265625 -85.5 C-82.06156425836343 -85.5, 39.603433983273135 -85.5, 203.7265625 -85.5 M-203.7265625 -85.5 C-74.7899178122326 -85.5, 54.146726875534796 -85.5, 203.7265625 -85.5 M203.7265625 -85.5 C203.7265625 -19.457609021448874, 203.7265625 46.58478195710225, 203.7265625 85.5 M203.7265625 -85.5 C203.7265625 -28.421881111178735, 203.7265625 28.65623777764253, 203.7265625 85.5 M203.7265625 85.5 C62.839997615346306 85.5, -78.04656726930739 85.5, -203.7265625 85.5 M203.7265625 85.5 C46.416977548315685 85.5, -110.89260740336863 85.5, -203.7265625 85.5 M-203.7265625 85.5 C-203.7265625 48.26477573100202, -203.7265625 11.029551462004036, -203.7265625 -85.5 M-203.7265625 85.5 C-203.7265625 18.08565583464555, -203.7265625 -49.3286883307089, -203.7265625 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-203.7265625 -42.75 L203.7265625 -42.75 L203.7265625 0 L-203.7265625 0" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-203.7265625 -42.75 C-70.8227636708329 -42.75, 62.0810351583342 -42.75, 203.7265625 -42.75 M-203.7265625 -42.75 C-115.85745671081206 -42.75, -27.988350921624118 -42.75, 203.7265625 -42.75 M203.7265625 -42.75 C203.7265625 -27.46902866684212, 203.7265625 -12.188057333684245, 203.7265625 0 M203.7265625 -42.75 C203.7265625 -26.732418440277513, 203.7265625 -10.714836880555026, 203.7265625 0 M203.7265625 0 C116.95815767348353 0, 30.189752846967053 0, -203.7265625 0 M203.7265625 0 C58.62268098588427 0, -86.48120052823145 0, -203.7265625 0 M-203.7265625 0 C-203.7265625 -12.812338235562075, -203.7265625 -25.62467647112415, -203.7265625 -42.75 M-203.7265625 0 C-203.7265625 -13.23833940483941, -203.7265625 -26.47667880967882, -203.7265625 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-203.7265625 0 L203.7265625 0 L203.7265625 42.75 L-203.7265625 42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-203.7265625 0 C-107.37778209855979 0, -11.029001697119583 0, 203.7265625 0 M-203.7265625 0 C-114.43128763043451 0, -25.136012760869022 0, 203.7265625 0 M203.7265625 0 C203.7265625 12.712667865558341, 203.7265625 25.425335731116682, 203.7265625 42.75 M203.7265625 0 C203.7265625 12.402749175629193, 203.7265625 24.805498351258386, 203.7265625 42.75 M203.7265625 42.75 C93.9689560272615 42.75, -15.788650445477003 42.75, -203.7265625 42.75 M203.7265625 42.75 C55.474525130079314 42.75, -92.77751223984137 42.75, -203.7265625 42.75 M-203.7265625 42.75 C-203.7265625 28.82418759600341, -203.7265625 14.898375192006817, -203.7265625 0 M-203.7265625 42.75 C-203.7265625 33.80338447989516, -203.7265625 24.856768959790323, -203.7265625 0" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-203.7265625 42.75 L203.7265625 42.75 L203.7265625 85.5 L-203.7265625 85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-203.7265625 42.75 C-107.42710097399815 42.75, -11.127639447996302 42.75, 203.7265625 42.75 M-203.7265625 42.75 C-114.19250036641292 42.75, -24.65843823282583 42.75, 203.7265625 42.75 M203.7265625 42.75 C203.7265625 59.62421562393203, 203.7265625 76.49843124786406, 203.7265625 85.5 M203.7265625 42.75 C203.7265625 52.272044919712634, 203.7265625 61.79408983942527, 203.7265625 85.5 M203.7265625 85.5 C44.77468196450329 85.5, -114.17719857099343 85.5, -203.7265625 85.5 M203.7265625 85.5 C55.13248456632442 85.5, -93.46159336735116 85.5, -203.7265625 85.5 M-203.7265625 85.5 C-203.7265625 71.45757686154136, -203.7265625 57.4151537230827, -203.7265625 42.75 M-203.7265625 85.5 C-203.7265625 74.80768932553168, -203.7265625 64.11537865106337, -203.7265625 42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="label name" transform="translate(-25.84375, -76.125)" style="">
+            <foreignObject width="51.6875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 152px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>STATUS</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-191.2265625, -33.375)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-124.5859375, -33.375)" style="">
+            <foreignObject width="14.09375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 114px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-23.3046875, -33.375)" style="">
+            <foreignObject width="18.734375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 119px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>PK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(21.7265625, -33.375)" style="">
+            <foreignObject width="119.625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 220px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Идентификатор</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-191.2265625, 9.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-124.5859375, 9.375)" style="">
+            <foreignObject width="40.515625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 141px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>name</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-23.3046875, 9.375)" style="">
+            <foreignObject width="20.03125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>UK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(21.7265625, 9.375)" style="">
+            <foreignObject width="131.03125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 231px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Название статуса</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-191.2265625, 52.125)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-124.5859375, 52.125)" style="">
+            <foreignObject width="76.28125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 177px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>sort_order</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(-23.3046875, 52.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(21.7265625, 52.125)" style="">
+            <foreignObject width="169.5" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 270px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Порядок отображения</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="divider">
+            <path d="M-203.7265625 -42.75005 L-203.7265625 -42.74995 L203.7265625 -42.74995 L203.7265625 -42.75005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-203.7265625 -42.75005 C-203.7265625 -42.750020334452586, -203.7265625 -42.74999066890517, -203.7265625 -42.74995 M-203.7265625 -42.75005 C-203.7265625 -42.750024795981275, -203.7265625 -42.749999591962556, -203.7265625 -42.74995 M-203.7265625 -42.74995 C-46.66432069068668 -42.74995, 110.39792111862664 -42.74995, 203.7265625 -42.74995 M-203.7265625 -42.74995 C-55.64683354239756 -42.74995, 92.43289541520488 -42.74995, 203.7265625 -42.74995 M203.7265625 -42.74995 C203.7265625 -42.74997550193289, 203.7265625 -42.75000100386578, 203.7265625 -42.75005 M203.7265625 -42.74995 C203.7265625 -42.74997081290587, 203.7265625 -42.749991625811745, 203.7265625 -42.75005 M203.7265625 -42.75005 C52.56561956739091 -42.75005, -98.59532336521818 -42.75005, -203.7265625 -42.75005 M203.7265625 -42.75005 C80.23163964168145 -42.75005, -43.26328321663709 -42.75005, -203.7265625 -42.75005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-137.0859875 -42.75 L-137.0858875 -42.75 L-137.0858875 85.5 L-137.0859875 85.5" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-137.0859875 -42.75 C-137.0859534569732 -42.75, -137.0859194139464 -42.75, -137.0858875 -42.75 M-137.0859875 -42.75 C-137.0859482635179 -42.75, -137.0859090270358 -42.75, -137.0858875 -42.75 M-137.0858875 -42.75 C-137.0858875 -1.3412436906144336, -137.0858875 40.06751261877113, -137.0858875 85.5 M-137.0858875 -42.75 C-137.0858875 -3.8349802025377215, -137.0858875 35.08003959492456, -137.0858875 85.5 M-137.0858875 85.5 C-137.08591693304888 85.5, -137.08594636609772 85.5, -137.0859875 85.5 M-137.0858875 85.5 C-137.08591782795762 85.5, -137.08594815591522 85.5, -137.0859875 85.5 M-137.0859875 85.5 C-137.0859875 44.28074863036297, -137.0859875 3.061497260725943, -137.0859875 -42.75 M-137.0859875 85.5 C-137.0859875 44.072548049592356, -137.0859875 2.6450960991847126, -137.0859875 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-35.8047375 -42.75 L-35.8046375 -42.75 L-35.8046375 85.5 L-35.8047375 85.5" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-35.8047375 -42.75 C-35.804698507766915 -42.75, -35.80465951553383 -42.75, -35.8046375 -42.75 M-35.8047375 -42.75 C-35.80470489533078 -42.75, -35.80467229066156 -42.75, -35.8046375 -42.75 M-35.8046375 -42.75 C-35.8046375 1.56165651677847, -35.8046375 45.87331303355694, -35.8046375 85.5 M-35.8046375 -42.75 C-35.8046375 -13.86546588624254, -35.8046375 15.019068227514921, -35.8046375 85.5 M-35.8046375 85.5 C-35.80466399400721 85.5, -35.804690488014415 85.5, -35.8047375 85.5 M-35.8046375 85.5 C-35.80467741347319 85.5, -35.804717326946395 85.5, -35.8047375 85.5 M-35.8047375 85.5 C-35.8047375 41.072284974327125, -35.8047375 -3.355430051345749, -35.8047375 -42.75 M-35.8047375 85.5 C-35.8047375 58.51562613022355, -35.8047375 31.53125226044711, -35.8047375 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M9.2265125 -42.75 L9.2266125 -42.75 L9.2266125 85.5 L9.2265125 85.5" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M9.2265125 -42.75 C9.226540480406019 -42.75, 9.226568460812036 -42.75, 9.2266125 -42.75 M9.2265125 -42.75 C9.226534033169205 -42.75, 9.226555566338412 -42.75, 9.2266125 -42.75 M9.2266125 -42.75 C9.2266125 4.188145506503105, 9.2266125 51.12629101300621, 9.2266125 85.5 M9.2266125 -42.75 C9.2266125 2.5757475216968118, 9.2266125 47.90149504339362, 9.2266125 85.5 M9.2266125 85.5 C9.226587205507345 85.5, 9.226561911014691 85.5, 9.2265125 85.5 M9.2266125 85.5 C9.22658060136946 85.5, 9.226548702738919 85.5, 9.2265125 85.5 M9.2265125 85.5 C9.2265125 35.17421171826276, 9.2265125 -15.151576563474478, 9.2265125 -42.75 M9.2265125 85.5 C9.2265125 35.1326810166991, 9.2265125 -15.234637966601795, 9.2265125 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-203.7265625 -42.75005 L-203.7265625 -42.74995 L203.7265625 -42.74995 L203.7265625 -42.75005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-203.7265625 -42.75005 C-203.7265625 -42.75002921796334, -203.7265625 -42.750008435926674, -203.7265625 -42.74995 M-203.7265625 -42.75005 C-203.7265625 -42.75002661748967, -203.7265625 -42.75000323497933, -203.7265625 -42.74995 M-203.7265625 -42.74995 C-90.30020070707093 -42.74995, 23.126161085858143 -42.74995, 203.7265625 -42.74995 M-203.7265625 -42.74995 C-63.412338144264965 -42.74995, 76.90188621147007 -42.74995, 203.7265625 -42.74995 M203.7265625 -42.74995 C203.7265625 -42.74997004541645, 203.7265625 -42.7499900908329, 203.7265625 -42.75005 M203.7265625 -42.74995 C203.7265625 -42.74997784070337, 203.7265625 -42.750005681406755, 203.7265625 -42.75005 M203.7265625 -42.75005 C55.184387496827725 -42.75005, -93.35778750634455 -42.75005, -203.7265625 -42.75005 M203.7265625 -42.75005 C53.50033320197184 -42.75005, -96.72589609605632 -42.75005, -203.7265625 -42.75005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+        </g>
+        <g class="node default" id="container-entity-ADMIN-5" data-look="neo" transform="translate(1965.5859375, 183)">
+          <g class="outer-path" style="">
+            <path d="M-198.0234375 -128.25 L198.0234375 -128.25 L198.0234375 128.25 L-198.0234375 128.25" stroke="none" stroke-width="0" fill="#ECECFF"></path>
+            <path d="M-198.0234375 -128.25 C-67.66988106194341 -128.25, 62.68367537611317 -128.25, 198.0234375 -128.25 M-198.0234375 -128.25 C-94.09685645313215 -128.25, 9.829724593735705 -128.25, 198.0234375 -128.25 M198.0234375 -128.25 C198.0234375 -60.422131507047084, 198.0234375 7.405736985905833, 198.0234375 128.25 M198.0234375 -128.25 C198.0234375 -57.90066938207693, 198.0234375 12.448661235846146, 198.0234375 128.25 M198.0234375 128.25 C96.06530166468796 128.25, -5.89283417062407 128.25, -198.0234375 128.25 M198.0234375 128.25 C60.6015487998813 128.25, -76.8203399002374 128.25, -198.0234375 128.25 M-198.0234375 128.25 C-198.0234375 68.7409426817126, -198.0234375 9.231885363425192, -198.0234375 -128.25 M-198.0234375 128.25 C-198.0234375 41.94709656795993, -198.0234375 -44.35580686408014, -198.0234375 -128.25" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-198.0234375 -85.5 L198.0234375 -85.5 L198.0234375 -42.75 L-198.0234375 -42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-198.0234375 -85.5 C-85.8434802433312 -85.5, 26.3364770133376 -85.5, 198.0234375 -85.5 M-198.0234375 -85.5 C-79.08664038647203 -85.5, 39.850156727055946 -85.5, 198.0234375 -85.5 M198.0234375 -85.5 C198.0234375 -73.89713071388108, 198.0234375 -62.294261427762166, 198.0234375 -42.75 M198.0234375 -85.5 C198.0234375 -70.73627035875228, 198.0234375 -55.97254071750456, 198.0234375 -42.75 M198.0234375 -42.75 C111.61921780808504 -42.75, 25.21499811617008 -42.75, -198.0234375 -42.75 M198.0234375 -42.75 C103.11024958781489 -42.75, 8.197061675629783 -42.75, -198.0234375 -42.75 M-198.0234375 -42.75 C-198.0234375 -52.77409584836128, -198.0234375 -62.798191696722554, -198.0234375 -85.5 M-198.0234375 -42.75 C-198.0234375 -56.142084479216344, -198.0234375 -69.53416895843269, -198.0234375 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-198.0234375 -42.75 L198.0234375 -42.75 L198.0234375 0 L-198.0234375 0" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-198.0234375 -42.75 C-89.87048798106443 -42.75, 18.282461537871143 -42.75, 198.0234375 -42.75 M-198.0234375 -42.75 C-59.74928457929005 -42.75, 78.5248683414199 -42.75, 198.0234375 -42.75 M198.0234375 -42.75 C198.0234375 -32.16213349734011, 198.0234375 -21.574266994680215, 198.0234375 0 M198.0234375 -42.75 C198.0234375 -31.746230348747176, 198.0234375 -20.742460697494348, 198.0234375 0 M198.0234375 0 C54.94284024218723 0, -88.13775701562554 0, -198.0234375 0 M198.0234375 0 C79.78206112110212 0, -38.459315257795765 0, -198.0234375 0 M-198.0234375 0 C-198.0234375 -15.966864791824706, -198.0234375 -31.933729583649413, -198.0234375 -42.75 M-198.0234375 0 C-198.0234375 -15.380201514698147, -198.0234375 -30.760403029396294, -198.0234375 -42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-198.0234375 0 L198.0234375 0 L198.0234375 42.75 L-198.0234375 42.75" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-198.0234375 0 C-81.87767343070912 0, 34.268090638581754 0, 198.0234375 0 M-198.0234375 0 C-114.46511362213316 0, -30.90678974426632 0, 198.0234375 0 M198.0234375 0 C198.0234375 16.3829291689759, 198.0234375 32.7658583379518, 198.0234375 42.75 M198.0234375 0 C198.0234375 13.71298514596259, 198.0234375 27.42597029192518, 198.0234375 42.75 M198.0234375 42.75 C83.82134280686665 42.75, -30.380751886266694 42.75, -198.0234375 42.75 M198.0234375 42.75 C117.06417011887619 42.75, 36.10490273775238 42.75, -198.0234375 42.75 M-198.0234375 42.75 C-198.0234375 27.746090718293154, -198.0234375 12.742181436586304, -198.0234375 0 M-198.0234375 42.75 C-198.0234375 28.05581442457018, -198.0234375 13.361628849140363, -198.0234375 0" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-even">
+            <path d="M-198.0234375 42.75 L198.0234375 42.75 L198.0234375 85.5 L-198.0234375 85.5" stroke="none" stroke-width="0" fill="hsl(240, 100%, 97.2745098039%)"></path>
+            <path d="M-198.0234375 42.75 C-42.86608207601938 42.75, 112.29127334796124 42.75, 198.0234375 42.75 M-198.0234375 42.75 C-45.777947071819 42.75, 106.467543356362 42.75, 198.0234375 42.75 M198.0234375 42.75 C198.0234375 54.135947732751724, 198.0234375 65.52189546550345, 198.0234375 85.5 M198.0234375 42.75 C198.0234375 56.276518923267325, 198.0234375 69.80303784653465, 198.0234375 85.5 M198.0234375 85.5 C82.02048401577973 85.5, -33.98246946844054 85.5, -198.0234375 85.5 M198.0234375 85.5 C42.832518242144914 85.5, -112.35840101571017 85.5, -198.0234375 85.5 M-198.0234375 85.5 C-198.0234375 72.49195481909535, -198.0234375 59.4839096381907, -198.0234375 42.75 M-198.0234375 85.5 C-198.0234375 76.88084811868285, -198.0234375 68.26169623736571, -198.0234375 42.75" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g style="" class="row-rect-odd">
+            <path d="M-198.0234375 85.5 L198.0234375 85.5 L198.0234375 128.25 L-198.0234375 128.25" stroke="none" stroke-width="0" fill="hsl(240, 100%, 100%)"></path>
+            <path d="M-198.0234375 85.5 C-81.54197644199978 85.5, 34.93948461600044 85.5, 198.0234375 85.5 M-198.0234375 85.5 C-68.49317829995906 85.5, 61.03708090008189 85.5, 198.0234375 85.5 M198.0234375 85.5 C198.0234375 98.81054934935122, 198.0234375 112.12109869870243, 198.0234375 128.25 M198.0234375 85.5 C198.0234375 96.28991206971264, 198.0234375 107.07982413942527, 198.0234375 128.25 M198.0234375 128.25 C47.67385770872829 128.25, -102.67572208254342 128.25, -198.0234375 128.25 M198.0234375 128.25 C102.43174038848146 128.25, 6.840043276962916 128.25, -198.0234375 128.25 M-198.0234375 128.25 C-198.0234375 117.50571203424035, -198.0234375 106.76142406848068, -198.0234375 85.5 M-198.0234375 128.25 C-198.0234375 115.67832529937516, -198.0234375 103.10665059875032, -198.0234375 85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="label name" transform="translate(-23.734375, -118.875)" style="">
+            <foreignObject width="47.46875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 147px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>ADMIN</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-185.5234375, -76.125)" style="">
+            <foreignObject width="19.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 120px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>int</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-95.2734375, -76.125)" style="">
+            <foreignObject width="14.09375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 114px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>id</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(6.6484375, -76.125)" style="">
+            <foreignObject width="18.734375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 119px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>PK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(51.6796875, -76.125)" style="">
+            <foreignObject width="119.625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 220px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Идентификатор</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-185.5234375, -33.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-95.2734375, -33.375)" style="">
+            <foreignObject width="72.890625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 173px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>full_name</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(6.6484375, -33.375)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(51.6796875, -33.375)" style="">
+            <foreignObject width="35.125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 135px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>ФИО</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-185.5234375, 9.375)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-95.2734375, 9.375)" style="">
+            <foreignObject width="36.171875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 136px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>login</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(6.6484375, 9.375)" style="">
+            <foreignObject width="20.03125" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 121px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>UK</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(51.6796875, 9.375)" style="">
+            <foreignObject width="45.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 146px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Логин</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-185.5234375, 52.125)" style="">
+            <foreignObject width="41.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 142px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>string</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-95.2734375, 52.125)" style="">
+            <foreignObject width="68.640625" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 169px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>password</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(6.6484375, 52.125)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(51.6796875, 52.125)" style="">
+            <foreignObject width="55.671875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 156px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Пароль</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-type" transform="translate(-185.5234375, 94.875)" style="">
+            <foreignObject width="65.25" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 165px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>datetime</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-name" transform="translate(-95.2734375, 94.875)" style="">
+            <foreignObject width="76.921875" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 177px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>created_at</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-keys" transform="translate(6.6484375, 94.875)" style="">
+            <foreignObject width="0" height="0">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 100px; text-align: start;">
+                <span class="nodeLabel"></span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="label attribute-comment" transform="translate(51.6796875, 94.875)" style="">
+            <foreignObject width="133.84375" height="24">
+              <div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 235px; text-align: start;">
+                <span class="nodeLabel">
+                  <p>Дата регистрации</p>
+                </span>
+              </div>
+            </foreignObject>
+          </g>
+          <g class="divider">
+            <path d="M-198.0234375 -85.50005 L-198.0234375 -85.49995 L198.0234375 -85.49995 L198.0234375 -85.50005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-198.0234375 -85.50005 C-198.0234375 -85.50001137466704, -198.0234375 -85.49997274933408, -198.0234375 -85.49995 M-198.0234375 -85.50005 C-198.0234375 -85.50001086996353, -198.0234375 -85.49997173992706, -198.0234375 -85.49995 M-198.0234375 -85.49995 C-59.572508401443 -85.49995, 78.878420697114 -85.49995, 198.0234375 -85.49995 M-198.0234375 -85.49995 C-118.03802766570514 -85.49995, -38.05261783141029 -85.49995, 198.0234375 -85.49995 M198.0234375 -85.49995 C198.0234375 -85.49997093004434, 198.0234375 -85.49999186008868, 198.0234375 -85.50005 M198.0234375 -85.49995 C198.0234375 -85.49998645223405, 198.0234375 -85.5000229044681, 198.0234375 -85.50005 M198.0234375 -85.50005 C58.562473500261376 -85.50005, -80.89849049947725 -85.50005, -198.0234375 -85.50005 M198.0234375 -85.50005 C82.84352155720394 -85.50005, -32.336394385592115 -85.50005, -198.0234375 -85.50005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-107.7734875 -85.5 L-107.7733875 -85.5 L-107.7733875 128.25 L-107.7734875 128.25" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-107.7734875 -85.5 C-107.7734631522563 -85.5, -107.7734388045126 -85.5, -107.7733875 -85.5 M-107.7734875 -85.5 C-107.77346441126225 -85.5, -107.7734413225245 -85.5, -107.7733875 -85.5 M-107.7733875 -85.5 C-107.7733875 -0.45176712130178487, -107.7733875 84.59646575739643, -107.7733875 128.25 M-107.7733875 -85.5 C-107.7733875 -26.88335997195238, -107.7733875 31.73328005609524, -107.7733875 128.25 M-107.7733875 128.25 C-107.77341446520809 128.25, -107.77344143041617 128.25, -107.7734875 128.25 M-107.7733875 128.25 C-107.77342389510527 128.25, -107.77346029021054 128.25, -107.7734875 128.25 M-107.7734875 128.25 C-107.7734875 65.75514832269602, -107.7734875 3.260296645392046, -107.7734875 -85.5 M-107.7734875 128.25 C-107.7734875 58.914715278176004, -107.7734875 -10.420569443647992, -107.7734875 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-5.8516125 -85.5 L-5.8515125 -85.5 L-5.8515125 128.25 L-5.8516125 128.25" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-5.8516125 -85.5 C-5.8515738947191664 -85.5, -5.851535289438334 -85.5, -5.8515125 -85.5 M-5.8516125 -85.5 C-5.851575361110907 -85.5, -5.851538222221815 -85.5, -5.8515125 -85.5 M-5.8515125 -85.5 C-5.8515125 -22.976028247173275, -5.8515125 39.54794350565345, -5.8515125 128.25 M-5.8515125 -85.5 C-5.8515125 -15.735778445239376, -5.8515125 54.02844310952125, -5.8515125 128.25 M-5.8515125 128.25 C-5.8515389844360906 128.25, -5.851565468872182 128.25, -5.8516125 128.25 M-5.8515125 128.25 C-5.8515500833881084 128.25, -5.851587666776216 128.25, -5.8516125 128.25 M-5.8516125 128.25 C-5.8516125 46.46415684012376, -5.8516125 -35.32168631975247, -5.8516125 -85.5 M-5.8516125 128.25 C-5.8516125 75.20316372904614, -5.8516125 22.156327458092264, -5.8516125 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M39.1796375 -85.5 L39.1797375 -85.5 L39.1797375 128.25 L39.1796375 128.25" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M39.1796375 -85.5 C39.17966807278527 -85.5, 39.17969864557054 -85.5, 39.1797375 -85.5 M39.1796375 -85.5 C39.17965854514475 -85.5, 39.17967959028949 -85.5, 39.1797375 -85.5 M39.1797375 -85.5 C39.1797375 -31.716615031080998, 39.1797375 22.066769937838004, 39.1797375 128.25 M39.1797375 -85.5 C39.1797375 -36.62145215025883, 39.1797375 12.257095699482335, 39.1797375 128.25 M39.1797375 128.25 C39.17971474979092 128.25, 39.179691999581834 128.25, 39.1796375 128.25 M39.1797375 128.25 C39.179716327342824 128.25, 39.179695154685646 128.25, 39.1796375 128.25 M39.1796375 128.25 C39.1796375 84.68742725597727, 39.1796375 41.124854511954524, 39.1796375 -85.5 M39.1796375 128.25 C39.1796375 71.95101671251723, 39.1796375 15.65203342503446, 39.1796375 -85.5" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+          <g class="divider">
+            <path d="M-198.0234375 -85.50005 L-198.0234375 -85.49995 L198.0234375 -85.49995 L198.0234375 -85.50005" stroke="none" stroke-width="0" fill="#ECECFF" fill-rule="evenodd"></path>
+            <path d="M-198.0234375 -85.50005 C-198.0234375 -85.50001243881457, -198.0234375 -85.49997487762913, -198.0234375 -85.49995 M-198.0234375 -85.50005 C-198.0234375 -85.50001648672907, -198.0234375 -85.49998297345812, -198.0234375 -85.49995 M-198.0234375 -85.49995 C-48.952431999515056 -85.49995, 100.11857350096989 -85.49995, 198.0234375 -85.49995 M-198.0234375 -85.49995 C-56.2127647272292 -85.49995, 85.5979080455416 -85.49995, 198.0234375 -85.49995 M198.0234375 -85.49995 C198.0234375 -85.49998805235485, 198.0234375 -85.50002610470972, 198.0234375 -85.50005 M198.0234375 -85.49995 C198.0234375 -85.49997069088082, 198.0234375 -85.49999138176162, 198.0234375 -85.50005 M198.0234375 -85.50005 C47.68739550808908 -85.50005, -102.64864648382184 -85.50005, -198.0234375 -85.50005 M198.0234375 -85.50005 C68.27913960031233 -85.50005, -61.46515829937533 -85.50005, -198.0234375 -85.50005" stroke="#9370DB" stroke-width="1.3" fill="none" stroke-dasharray="0 0"></path>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <filter id="container-drop-shadow" height="130%" width="130%">
+      <feDropShadow dx="4" dy="4" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow>
+    </filter>
+  </defs>
+  <defs>
+    <filter id="container-drop-shadow-small" height="150%" width="150%">
+      <feDropShadow dx="2" dy="2" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"></feDropShadow>
+    </filter>
+  </defs>
+</svg>

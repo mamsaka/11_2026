@@ -1,0 +1,57 @@
+erDiagram
+    EMPLOYEE ||--o{ REQUEST : ""
+    SPECIALIST |o--o{ REQUEST : ""
+    EQUIPMENT_TYPE ||--o{ REQUEST : ""
+    STATUS ||--o{ REQUEST : ""
+
+    EMPLOYEE {
+        int id PK "Идентификатор"
+        string full_name "ФИО"
+        string position "Должность"
+        string department "Отдел"
+        string login UK "Логин"
+        string password "Пароль"
+        datetime created_at "Дата регистрации"
+    }
+
+    ADMIN {
+        int id PK "Идентификатор"
+        string full_name "ФИО"
+        string login UK "Логин"
+        string password "Пароль"
+        datetime created_at "Дата регистрации"
+    }
+
+    SPECIALIST {
+        int id PK "Идентификатор"
+        string full_name "ФИО"
+        string specialization "Специализация"
+        string login UK "Логин"
+        string password "Пароль"
+        bool is_active "Активен"
+        datetime created_at "Дата регистрации"
+    }
+
+    EQUIPMENT_TYPE {
+        int id PK "Идентификатор"
+        string name UK "Название типа"
+        string description "Описание"
+    }
+
+    STATUS {
+        int id PK "Идентификатор"
+        string name UK "Название статуса"
+        int sort_order "Порядок отображения"
+    }
+
+    REQUEST {
+        int id PK "Номер заявки"
+        int employee_id FK "Заявитель"
+        int specialist_id FK "Исполнитель (NULL, пока не назначен)"
+        int equipment_type_id FK "Тип оборудования"
+        int status_id FK "Текущий статус"
+        string problem_description "Описание проблемы"
+        datetime created_at "Дата создания"
+        datetime updated_at "Дата изменения"
+        datetime completed_at "Дата выполнения"
+    }
