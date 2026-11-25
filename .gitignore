@@ -2,11 +2,14 @@
 bin/
 obj/
 
-# Файлы базы данынх
+# Файлы базы данных
 *.db
 *.sqlite
 *.sqlite3
 db/
+
+# Пакеты NuGet
+packages/
 
 # IDE
 .vs/
