@@ -89,6 +89,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="services\AuthService.cs" />
     <Compile Include="services\DatabaseHandler.cs" />
+    <Compile Include="services\RequestListItem.cs" />
     <Compile Include="services\UserSession.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

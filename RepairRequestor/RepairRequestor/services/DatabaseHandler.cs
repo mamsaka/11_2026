@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using Microsoft.Data.Sqlite;
 
@@ -147,6 +148,47 @@ namespace RepairRequestor.services
 
                 return AuthResult.Fail("Неверный логин или пароль.");
             }
+        }
+
+        /// <summary>
+        /// Возвращает список всех заявок с расшифровкой справочных полей.
+        /// Разграничение по ролям (бизнес-логика) здесь отсутствует — заявки видны всем.
+        /// </summary>
+        public static List<RequestListItem> GetRequests()
+        {
+            List<RequestListItem> requests = new List<RequestListItem>();
+
+            using (SqliteConnection connection = OpenConnection())
+            using (SqliteCommand command = connection.CreateCommand())
+            {
+                command.CommandText =
+                    "SELECT r.id, e.full_name, et.name, r.problem_description, r.created_at, s.full_name, st.name " +
+                    "FROM REQUEST r " +
+                    "JOIN EMPLOYEE e ON e.id = r.employee_id " +
+                    "JOIN EQUIPMENT_TYPE et ON et.id = r.equipment_type_id " +
+                    "JOIN STATUS st ON st.id = r.status_id " +
+                    "LEFT JOIN SPECIALIST s ON s.id = r.specialist_id " +
+                    "ORDER BY r.created_at DESC, r.id DESC;";
+
+                using (SqliteDataReader reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        requests.Add(new RequestListItem
+                        {
+                            Id = reader.GetInt32(0),
+                            EmployeeName = reader.GetString(1),
+                            EquipmentTypeName = reader.GetString(2),
+                            ProblemDescription = reader.GetString(3),
+                            CreatedAt = reader.GetString(4),
+                            SpecialistName = reader.IsDBNull(5) ? string.Empty : reader.GetString(5),
+                            StatusName = reader.GetString(6)
+                        });
+                    }
+                }
+            }
+
+            return requests;
         }
 
         // Имена таблиц передаются только из констант внутри этого класса.
