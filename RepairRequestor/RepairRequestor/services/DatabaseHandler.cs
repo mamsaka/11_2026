@@ -262,6 +262,11 @@ namespace RepairRequestor.services
             public bool IsActive;
         }
 
+        private static readonly string[] RequiredTables =
+        {
+            "EMPLOYEE", "ADMIN", "SPECIALIST", "EQUIPMENT_TYPE", "STATUS", "REQUEST"
+        };
+
         /// <summary>
         /// Создаёт резервную копию базы данных в указанный файл.
         /// Использует VACUUM INTO — SQLite сам делает согласованную копию даже на «живой» базе.
@@ -293,6 +298,130 @@ namespace RepairRequestor.services
                 // Путь подставляется литералом, поэтому экранируем одинарные кавычки.
                 command.CommandText = "VACUUM INTO '" + destination.Replace("'", "''") + "';";
                 command.ExecuteNonQuery();
+            }
+        }
+
+        /// <summary>
+        /// Заменяет текущую базу данных выбранным файлом резервной копии.
+        /// Перед заменой сохраняет копию текущей базы рядом с ней (возвращает её путь).
+        /// </summary>
+        public static string RestoreDBFromFile(string sourceFilePath)
+        {
+            if (string.IsNullOrWhiteSpace(sourceFilePath))
+            {
+                throw new ArgumentException("Не указан файл резервной копии.", nameof(sourceFilePath));
+            }
+
+            string source = Path.GetFullPath(sourceFilePath);
+            string target = Path.GetFullPath(DatabasePath);
+
+            if (!File.Exists(source))
+            {
+                throw new FileNotFoundException("Файл резервной копии не найден.", source);
+            }
+
+            if (string.Equals(source, target, StringComparison.OrdinalIgnoreCase))
+            {
+                throw new InvalidOperationException("Выбранный файл уже является текущей базой данных.");
+            }
+
+            EnsureValidDatabase(source);
+
+            // Отпускаем соединения из пула, иначе файл базы останется заблокированным.
+            SqliteConnection.ClearAllPools();
+
+            string targetDirectory = Path.GetDirectoryName(target);
+            if (!string.IsNullOrEmpty(targetDirectory) && !Directory.Exists(targetDirectory))
+            {
+                Directory.CreateDirectory(targetDirectory);
+            }
+
+            string backupPath = null;
+            if (File.Exists(target))
+            {
+                backupPath = target + ".before-restore-" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".bak";
+                File.Copy(target, backupPath, true);
+            }
+
+            DeleteSidecarFiles(target);
+            File.Copy(source, target, true);
+
+            return backupPath;
+        }
+
+        /// <summary>
+        /// Проверяет, что файл — корректная база SQLite с ожидаемым набором таблиц.
+        /// </summary>
+        private static void EnsureValidDatabase(string filePath)
+        {
+            try
+            {
+                SqliteConnectionStringBuilder builder = new SqliteConnectionStringBuilder
+                {
+                    DataSource = filePath,
+                    Mode = SqliteOpenMode.ReadOnly
+                };
+
+                using (SqliteConnection connection = new SqliteConnection(builder.ToString()))
+                {
+                    connection.Open();
+
+                    using (SqliteCommand command = connection.CreateCommand())
+                    {
+                        command.CommandText = "PRAGMA integrity_check;";
+                        string result = Convert.ToString(command.ExecuteScalar());
+                        if (!string.Equals(result, "ok", StringComparison.OrdinalIgnoreCase))
+                        {
+                            throw new DatabaseUnavailableException(
+                                "Файл повреждён: проверка целостности базы данных не пройдена.");
+                        }
+                    }
+
+                    HashSet<string> tables = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                    using (SqliteCommand command = connection.CreateCommand())
+                    {
+                        command.CommandText = "SELECT name FROM sqlite_master WHERE type = 'table';";
+                        using (SqliteDataReader reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                tables.Add(reader.GetString(0));
+                            }
+                        }
+                    }
+
+                    foreach (string tableName in RequiredTables)
+                    {
+                        if (!tables.Contains(tableName))
+                        {
+                            throw new DatabaseUnavailableException(
+                                "В выбранном файле нет таблицы " + tableName + "." + Environment.NewLine +
+                                "Это не база данных системы учёта заявок.");
+                        }
+                    }
+                }
+            }
+            catch (SqliteException exception)
+            {
+                throw new DatabaseUnavailableException(
+                    "Выбранный файл не является корректной базой данных SQLite.", exception);
+            }
+        }
+
+        /// <summary>
+        /// Удаляет служебные файлы SQLite (-wal, -shm, -journal), оставшиеся от старой базы.
+        /// </summary>
+        private static void DeleteSidecarFiles(string databasePath)
+        {
+            string[] suffixes = { "-wal", "-shm", "-journal" };
+
+            foreach (string suffix in suffixes)
+            {
+                string sidecar = databasePath + suffix;
+                if (File.Exists(sidecar))
+                {
+                    File.Delete(sidecar);
+                }
             }
         }
     }

@@ -41,6 +41,7 @@
             this.colSpecialist = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ReserveCopyButton = new System.Windows.Forms.Button();
+            this.RestoreButton = new System.Windows.Forms.Button();
             this.HeaderPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RequestsGrid)).BeginInit();
             this.SuspendLayout();
@@ -190,11 +191,24 @@
             this.ReserveCopyButton.Visible = false;
             this.ReserveCopyButton.Click += new System.EventHandler(this.ReserveCopyButton_Click);
             // 
+            // RestoreButton
+            // 
+            this.RestoreButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.RestoreButton.Location = new System.Drawing.Point(378, 406);
+            this.RestoreButton.Name = "RestoreButton";
+            this.RestoreButton.Size = new System.Drawing.Size(200, 32);
+            this.RestoreButton.TabIndex = 4;
+            this.RestoreButton.Text = "Восстановить из копии";
+            this.RestoreButton.UseVisualStyleBackColor = true;
+            this.RestoreButton.Visible = false;
+            this.RestoreButton.Click += new System.EventHandler(this.RestoreButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.RestoreButton);
             this.Controls.Add(this.ReserveCopyButton);
             this.Controls.Add(this.RequestsGrid);
             this.Controls.Add(this.HeaderPanel);
@@ -224,5 +238,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colSpecialist;
         private System.Windows.Forms.DataGridViewTextBoxColumn colStatus;
         private System.Windows.Forms.Button ReserveCopyButton;
+        private System.Windows.Forms.Button RestoreButton;
     }
 }

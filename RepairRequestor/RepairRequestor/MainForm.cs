@@ -16,7 +16,9 @@ namespace RepairRequestor
             currentUser = user ?? throw new ArgumentNullException(nameof(user));
 
             InitializeComponent();
-            ReserveCopyButton.Visible = currentUser.Role == UserRole.Administrator;
+            bool isAdministrator = currentUser.Role == UserRole.Administrator;
+            ReserveCopyButton.Visible = isAdministrator;
+            RestoreButton.Visible = isAdministrator;
             UserInfoLabel.Text = currentUser.FullName;
             RoleLabel.Text = "Роль: " + currentUser.RoleDisplayName;
 
@@ -120,5 +122,72 @@ namespace RepairRequestor
             }
         }
 
+        private void RestoreButton_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog dialog = new OpenFileDialog
+            {
+                Filter = "База данных SQLite (*.db)|*.db|Все файлы (*.*)|*.*",
+                InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                CheckFileExists = true,
+                Multiselect = false
+            })
+            {
+                if (dialog.ShowDialog(this) != DialogResult.OK)
+                {
+                    return;
+                }
+
+                DialogResult confirm = MessageBox.Show(
+                    this,
+                    "Текущая база данных будет заменена выбранным файлом:" + Environment.NewLine +
+                    dialog.FileName + Environment.NewLine + Environment.NewLine +
+                    "Перед заменой автоматически создаётся копия текущей базы." + Environment.NewLine +
+                    "Продолжить?",
+                    "Восстановление базы данных",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning,
+                    MessageBoxDefaultButton.Button2);
+
+                if (confirm != DialogResult.Yes)
+                {
+                    return;
+                }
+
+                try
+                {
+                    string backupPath = DatabaseHandler.RestoreDBFromFile(dialog.FileName);
+                    LoadRequests();
+
+                    string message = "База данных восстановлена из файла:" + Environment.NewLine +
+                                     dialog.FileName;
+                    if (!string.IsNullOrEmpty(backupPath))
+                    {
+                        message += Environment.NewLine + Environment.NewLine +
+                                   "Копия прежней базы сохранена:" + Environment.NewLine + backupPath;
+                    }
+
+                    MessageBox.Show(this, message, "Готово",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (DatabaseUnavailableException exception)
+                {
+                    MessageBox.Show(this, exception.Message, "Ошибка базы данных",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                catch (IOException exception)
+                {
+                    MessageBox.Show(this,
+                        "Не удалось заменить файл базы данных. Возможно, он используется другой программой." +
+                        Environment.NewLine + Environment.NewLine + exception.Message,
+                        "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                catch (Exception exception)
+                {
+                    System.Diagnostics.Debug.WriteLine(exception);
+                    MessageBox.Show(this, "Не удалось восстановить базу данных.", "Ошибка",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
     }
 }
