@@ -8,9 +8,12 @@ obj/
 *.sqlite3
 db/
 
-# Пакеты NuGet
-packages/
+# Пакеты и зависимости
+/RepairRequestor/packages/
 
 # IDE
 .vs/
-.idea/
+.vscode/
+
+# Файлы git
+git/
