@@ -261,5 +261,39 @@ namespace RepairRequestor.services
             public string FullName;
             public bool IsActive;
         }
+
+        /// <summary>
+        /// Создаёт резервную копию базы данных в указанный файл.
+        /// Использует VACUUM INTO — SQLite сам делает согласованную копию даже на «живой» базе.
+        /// </summary>
+        public static void BackupDBToFile(string filePath)
+        {
+            if (string.IsNullOrWhiteSpace(filePath))
+            {
+                throw new ArgumentException("Не указан путь для резервной копии.", nameof(filePath));
+            }
+
+            string destination = Path.GetFullPath(filePath);
+
+            string directory = Path.GetDirectoryName(destination);
+            if (!string.IsNullOrEmpty(directory) && !Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            // VACUUM INTO не перезаписывает существующий файл — удаляем его заранее.
+            if (File.Exists(destination))
+            {
+                File.Delete(destination);
+            }
+
+            using (SqliteConnection connection = OpenConnection())
+            using (SqliteCommand command = connection.CreateCommand())
+            {
+                // Путь подставляется литералом, поэтому экранируем одинарные кавычки.
+                command.CommandText = "VACUUM INTO '" + destination.Replace("'", "''") + "';";
+                command.ExecuteNonQuery();
+            }
+        }
     }
 }
