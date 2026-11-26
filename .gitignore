@@ -17,3 +17,8 @@ db/
 
 # Файлы git
 git/
+
+# Логи
+log.*
+log
+log/
