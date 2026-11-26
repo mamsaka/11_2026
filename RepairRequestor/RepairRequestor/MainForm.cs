@@ -24,7 +24,8 @@ namespace RepairRequestor
         {
             try
             {
-                List<RequestListItem> requests = DatabaseHandler.GetRequests();
+                int userId = currentUser.Role == UserRole.Employee ? currentUser.Id : -1;
+                List<RequestListItem> requests = DatabaseHandler.GetRequests(userId);
                 RequestsGrid.DataSource = requests;
             }
             catch (DatabaseUnavailableException exception)

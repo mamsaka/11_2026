@@ -151,16 +151,19 @@ namespace RepairRequestor.services
         }
 
         /// <summary>
-        /// Возвращает список всех заявок с расшифровкой справочных полей.
-        /// Разграничение по ролям (бизнес-логика) здесь отсутствует — заявки видны всем.
+        /// Возвращает список заявок с расшифровкой справочных полей.
+        /// При userId >= 0 — только заявки этого сотрудника,
+        /// иначе (специалист/администратор) — все заявки.
         /// </summary>
-        public static List<RequestListItem> GetRequests()
+        public static List<RequestListItem> GetRequests(int userId)
         {
             List<RequestListItem> requests = new List<RequestListItem>();
 
             using (SqliteConnection connection = OpenConnection())
             using (SqliteCommand command = connection.CreateCommand())
             {
+                string whereClause = userId >= 0 ? " WHERE r.employee_id = $userId " : " ";
+
                 command.CommandText =
                     "SELECT r.id, e.full_name, et.name, r.problem_description, r.created_at, s.full_name, st.name " +
                     "FROM REQUEST r " +
@@ -168,7 +171,13 @@ namespace RepairRequestor.services
                     "JOIN EQUIPMENT_TYPE et ON et.id = r.equipment_type_id " +
                     "JOIN STATUS st ON st.id = r.status_id " +
                     "LEFT JOIN SPECIALIST s ON s.id = r.specialist_id " +
+                    whereClause +
                     "ORDER BY r.created_at DESC, r.id DESC;";
+
+                if (userId >= 0)
+                {
+                    command.Parameters.AddWithValue("$userId", userId);
+                }
 
                 using (SqliteDataReader reader = command.ExecuteReader())
                 {
