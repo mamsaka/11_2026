@@ -63,6 +63,19 @@ namespace RepairRequestor.services
             return File.Exists(DatabasePath);
         }
 
+        /// <summary>
+        /// Папка по умолчанию для резервных копий (Документы\RepairRequestorReserveCopies).
+        /// </summary>
+        public static string DefaultBackupFolder
+        {
+            get
+            {
+                return Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
+                    "RepairRequestorReserveCopies");
+            }
+        }
+
         private static string ResolveDatabasePath()
         {
             DirectoryInfo directory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
@@ -339,7 +352,13 @@ namespace RepairRequestor.services
             string backupPath = null;
             if (File.Exists(target))
             {
-                backupPath = target + ".before-restore-" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".bak";
+                string backupFolder = DefaultBackupFolder;
+                Directory.CreateDirectory(backupFolder);
+
+                backupPath = Path.Combine(
+                    backupFolder,
+                    "repair-db-before-restore-" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + ".db");
+
                 File.Copy(target, backupPath, true);
             }
 

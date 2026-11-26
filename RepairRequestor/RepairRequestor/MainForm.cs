@@ -60,9 +60,7 @@ namespace RepairRequestor
 
         private void ReserveCopyButton_Click(object sender, EventArgs e)
         {
-            string defaultFolder = Path.Combine(
-                Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-                "RepairRequestorReserveCopies");
+            string defaultFolder = DatabaseHandler.DefaultBackupFolder;
 
             // Папку нужно создать ДО показа диалога: на несуществующий
             // InitialDirectory SaveFileDialog молча откроется в «Документах».
