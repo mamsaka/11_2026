@@ -110,12 +110,12 @@
             this.RequestsGrid.Location = new System.Drawing.Point(0, 68);
             this.RequestsGrid.MultiSelect = false;
             this.RequestsGrid.Name = "RequestsGrid";
-            this.RequestsGrid.ReadOnly = true;
             this.RequestsGrid.RowHeadersVisible = false;
             this.RequestsGrid.RowHeadersWidth = 51;
             this.RequestsGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.RequestsGrid.Size = new System.Drawing.Size(800, 382);
             this.RequestsGrid.TabIndex = 1;
+            this.RequestsGrid.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RequestsGrid_CellDoubleClick);
             // 
             // colId
             // 

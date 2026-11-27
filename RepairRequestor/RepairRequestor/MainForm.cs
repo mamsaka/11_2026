@@ -16,9 +16,38 @@ namespace RepairRequestor
             currentUser = user ?? throw new ArgumentNullException(nameof(user));
 
             InitializeComponent();
+
             bool isAdministrator = currentUser.Role == UserRole.Administrator;
-            ReserveCopyButton.Visible = isAdministrator;
-            RestoreButton.Visible = isAdministrator;
+            bool isSpecialist = currentUser.Role == UserRole.Specialist;
+
+            // Специальные настройки для администратора
+            if (isAdministrator)
+            {
+                ReserveCopyButton.Visible = true;
+                RestoreButton.Visible = true;
+            }
+
+            // Специальные настройки для специалиста
+            if (isSpecialist)
+            {
+                RequestsGrid.CellDoubleClick -= RequestsGrid_CellDoubleClick;
+
+                var colStatus = new DataGridViewComboBoxColumn
+                {
+                    Name = "colStatus",
+                    HeaderText = "Статус",
+                    DataPropertyName = nameof(RequestListItem.StatusName),
+                    DataSource = new[] { "Новая", "В работе", "Выполнена" },
+                    DisplayStyle = DataGridViewComboBoxDisplayStyle.DropDownButton,
+                    ReadOnly = false
+                };
+
+                int index = RequestsGrid.Columns["colStatus"].Index;
+                RequestsGrid.Columns.RemoveAt(index);
+                RequestsGrid.Columns.Insert(index, colStatus);
+                RequestsGrid.CellValueChanged += RequestsGrid_CellValueChanged;
+            }
+
             UserInfoLabel.Text = currentUser.FullName;
             RoleLabel.Text = "Роль: " + currentUser.RoleDisplayName;
 
@@ -186,6 +215,33 @@ namespace RepairRequestor
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+        }
+
+        private void RequestsGrid_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                return;
+            }
+
+            RequestListItem request = RequestsGrid.Rows[e.RowIndex].DataBoundItem as RequestListItem;
+            if (request == null)
+            {
+                return;
+            }
+
+            using (RequestAddOrEditForm form = new RequestAddOrEditForm(request, currentUser))
+            {
+                if (form.ShowDialog(this) == DialogResult.OK)
+                {
+                    LoadRequests();
+                }
+            }
+        }
+        
+        private void RequestsGrid_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }
